@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ApolloProvider } from "react-apollo";
+import client from "./Utils/ApolloClient";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import MHeader from './Components/Shared/Header';
+import Footer from './Components/Shared/Footer';
+import HomePage from './Routes/HomePage';
+import Evaluation from './Routes/PoolEvalutation';
+import Products from './Routes/Products';
+import Contact from './Routes/Contact';
+import TopBar from './Components/Shared/TopBar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+    <Router>
+      <div className="App max-w-100 overflow-x-hidden">
+        <TopBar/>
+        <MHeader />
+          <Switch>
+            <Route path="/" exact component={HomePage}/>
+            <Route path="/Evaluation" component={Evaluation}/>
+            <Route path="/Products" component={Products}/>
+            <Route path="/Contact" component={Contact}/>
+          </Switch>
+        <Footer />
+      </div>
+    </Router>
+    </ApolloProvider>
   );
 }
 
 export default App;
+
+
