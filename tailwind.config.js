@@ -27,7 +27,8 @@ module.exports = {
         'card-sm': '300px'
       },
       borderColor:{
-        "black": 'rgba(0,0,0,.1)'
+        "black": 'rgba(0,0,0,.1)',
+        "dark" : 'rgba(0,0,0,.8)',
       },
       textColor: {
         'gold': '#B99867',

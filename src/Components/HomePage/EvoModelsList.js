@@ -26,15 +26,15 @@ return (
     <div className="flex md:items-center md:justify-start">
         <h2 className="h2-title text-left p-3">Featured Products</h2>
         <div className="h-1 bg-gray flex-grow hidden md:inline"></div>
-        <button className="p-3 text-blue">See all</button>
+        <button className="p-3 hidden md:inline text-blue">See all</button>
     </div>
 
     <ol className="p-3 pr-6 flex flex-no-wrap overflow-x-auto md:flex-col md:items-center" >
         {data.evoheatModels.map(models => (
             
-            <li style={backgroundCircle} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-3/5 lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-16 " key={models.id}>
+            <li style={backgroundCircle}  key={models.id} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-8 " key={models.id}>
                 <div className="md:w-1/2 h-auto">
-                    <img key={models.id} className="pt-6 pb-6 object-cover h-auto md:m-auto" src={"http://localhost:1337" + models.Image.url} ></img>
+                    <img className="pt-6 pb-6 object-cover h-auto md:m-auto" src={"http://localhost:1337" + models.Image.url} ></img>
                 </div>
                 <div className="w-full flex flex-col items-center md:items-start md:w-1/2">
                     <h3 className="font-bold text-center w-4/5 md:text-left md:text-xl">{models.FullName}</h3>

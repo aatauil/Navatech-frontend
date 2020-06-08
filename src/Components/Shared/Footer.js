@@ -5,9 +5,9 @@ import {faFacebookF,faTwitter,faInstagram,faLinkedin} from "@fortawesome/free-br
 function Footer() {
     return (
         <footer className="bg-gray" >
-            <div className="container py-16 mx-auto">
+            <div className="container pt-16 md:pb-16 mx-auto">
                 <div className="flex md:flex-grow flex-col md:flex-row">
-                <div className="xl:w-1/5 mx-4 md:border-r-2 md:border-b-0 md:w-1/3 border-b-2 mb-6 border-black w-full">
+                <div className="xl:w-1/5 px-4  md:border-b-0 md:w-1/3 text-center md:text-left mb-6 border-black w-full">
                     <h2 className="font-bold text-2xl mb-3 ">Contact</h2>
                     <ol className="list-none mb-10">
                         <li className="pb-2">
@@ -18,7 +18,7 @@ function Footer() {
                         </li>
                     </ol>
                 </div>
-                <div className=" w-1/5 mx-4 border-r-2 border-black hidden xl:inline">
+                <div className=" w-1/5 px-4 border-l-2 border-black hidden xl:inline ">
                     <h2 className="font-bold text-2xl mb-3 ">Discover</h2>
                     <nav className="list-none mb-10">
                     <li className="pb-2">
@@ -32,7 +32,7 @@ function Footer() {
                     </li>
                     </nav>
                 </div>
-                <div className="md:w-1/5 mx-4 border-r-2 border-black hidden xl:inline">
+                <div className="w-full md:w-1/3 xl:w-1/5 px-4 md:border-l-2 border-black text-center md:text-left">
                     <h2 className="font-bold text-2xl mb-3 ">General</h2>
                     <ol className="list-none mb-10">
                     <li className="pb-2">
@@ -46,7 +46,7 @@ function Footer() {
                     </li>
                     </ol>
                 </div>
-                <div className="xl:w-2/5 mx-4 2/3">
+                <div className="xl:w-1/3 px-4 md:border-l-2 border-black 2/3 hidden md:inline">
                     <h2 className="font-bold text-2xl mb-3">Newsletter</h2>
                     <div className="list-none mb-10">
                     <p>Subscribe to our newsletter and receive product news and promotions</p>
@@ -58,8 +58,8 @@ function Footer() {
                 </div>
                 </div>
             </div>
-            <div className="border border-black py-6">
-                <div className="container flex justify-between items-center mx-auto">
+            <div className="border border-black py-6 px-2">
+                <div className="container flex justify-center md:justify-between items-center mx-auto">
                 
                 <div className="inline-flex justify-center md:justify-start md:w-auto text-xl">
                     <a className="text-gray-500 bg-white px-4 py-2 text-blue">
@@ -75,7 +75,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
                 </div>
-                <a href="#" className="text-gold md:text-lg font-bold bg-white px-4 py-2" >NAVATECH</a>
+                <a href="#" className="hidden md:block text-gold md:text-lg font-bold bg-white px-4 py-2" >NAVATECH</a>
                 </div>
             </div>
         <div className="">

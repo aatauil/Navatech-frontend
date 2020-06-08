@@ -6,9 +6,9 @@ import Aquatic from '../../Assets/PixelBased/Aquatic-center.png'
 
 function About() {
     return (
-        <section className="my-20 pt-12 border-t border-black max-w-screen-xl mx-auto">
+        <section className="my-20 pt-12 border-t border-black max-w-screen-xl mx-auto ">
             <h2 className="h2-title">About us</h2>
-            <p className="p-6 text-center w-2/3 m-auto">We are passionate and keen to create a lovely desired pool temperature experiences for as many pool owners and their families or their users to enjoy. We work with the team at EVOHEAT to assist you in getting the BEST pool heat pump solutions for all your pool heating or pool cooling requirements.</p>
+            <p className="p-6 text-center w-full md:w-2/3 m-auto">We are passionate and keen to create a lovely desired pool temperature experiences for as many pool owners and their families or their users to enjoy. We work with the team at EVOHEAT to assist you in getting the BEST pool heat pump solutions for all your pool heating or pool cooling requirements.</p>
             <ol className="flex justify-center">
                 <li className="hidden md:inline">
                     <img src={Villa} className="h-56 object-cover "></img>

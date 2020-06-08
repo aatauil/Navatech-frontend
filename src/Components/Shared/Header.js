@@ -39,7 +39,7 @@ function Header() {
     }
     
     return(
-        <div className="w-screen md:shadow-b">
+        <div className="w-full md:shadow-b">
         <nav className="border-b border-black md:border-none font-bold p-3 md:py-8 flex justify-between items-center max-w-screen-xl mx-auto">
             <a href="#" className="text-gold md:text-lg" >NAVATECH</a>
             <span className="text-xl md:hidden">

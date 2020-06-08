@@ -6,7 +6,7 @@ query allProducts {
     allProducts{
         id
         Name
-        Images{
+        MainImage{
             url
         }
     } 

@@ -14,7 +14,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
     <Router>
-      <div className="App max-w-100 overflow-x-hidden">
+      <div className="App max-w-100 ">
         <TopBar/>
         <MHeader />
           <Switch>
