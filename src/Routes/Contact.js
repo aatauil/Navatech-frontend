@@ -4,11 +4,10 @@ import { faMapMarkerAlt , faArrowsAltH} from "@fortawesome/free-solid-svg-icons"
 
 function Contact() {
     return (
-        <div>
+        <div className="my-6 container m-auto">
              <h1 className="h1-title my-12">Contact</h1>
-
-             <div className="flex justify-center flex-wrap">
-                 <div className="flex justify-around m-2 flex-col border rounded p-16 w-2/5 border-black">
+            <div className="grid gap-2 md:gap-6 grid-cols-none md:grid-cols-2 ">
+                 <div className="border rounded  w-full border-black p-16 flex flex-col justify-center align-center">
                  <span className=" text-4xl text-center"><FontAwesomeIcon  icon={faMapMarkerAlt}/></span>
                     <h2 className="h2-title">Reach Us</h2>
                     <div>
@@ -16,15 +15,14 @@ function Contact() {
                         <p className="text-center">+65 9336 8535</p>
                     </div>
                  </div>
-                 <div className="border rounded w-2/5 m-2 border-black p-16 flex flex-col justify-center align-center">
+                 <div className="border rounded  w-full border-black p-16 flex flex-col justify-center align-center">
                      <span className=" text-4xl text-center"><FontAwesomeIcon  icon={faMapMarkerAlt}/></span>
                     
                     <h2 className="h2-title">Availability</h2>
-                    <p>Monday - Friday: 9.am - 5.30 pm</p>
-                 </div>
-             </div>
-             <article className="mt-6 border p-12 border-black w-4/5 m-auto">
-                     <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
+                    <p className="text-center">Monday - Friday: <br></br> 9.am - 5.30 pm</p>
+                </div>
+                <article className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16">
+                    <div className="grid  grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
                         <div className="mt-6">
                                 <label className="font-bold" for="first-name">First Name:</label>
                                 <div className="my-4">
@@ -62,6 +60,7 @@ function Contact() {
                      <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>
                      </div>
                 </article>
+                </div>
         </div>
     )
 }
