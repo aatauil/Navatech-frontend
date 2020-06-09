@@ -4,6 +4,7 @@ import {faFilter, faTimes} from "@fortawesome/free-solid-svg-icons"
 import ALLPRODUCTS_QUERY from "../Queries/ALLPRODUCTS_QUERY"
 import { useQuery } from "@apollo/react-hooks";
 import Select from 'react-select'
+import { Link } from 'react-router-dom';
 
 
 function Products() {
@@ -58,10 +59,12 @@ if (error) return `Error! ${error.message}`;
                     <div className=" grid grid-flow-row grid-cols-2  gap-6 my-6 ">
                         {data.allProducts.map(product => (
                             console.log(product.mainImage),
-                            <article key={product.id}  className="border border-black rounded flex flex-col justify-end">
+                            <Link to={`/Product/${product.id}`}>
+                                <article key={product.id} className="border border-black rounded flex flex-col justify-end">
                                 <img className="mx-auto" src={"http://localhost:1337" + product.MainImage.url}></img>
-                            <h2 className="font-bold text-center text-lg py-4">{product.Name}</h2>
-                            </article>
+                                <h2 className="font-bold text-center text-lg py-4">{product.Name}</h2>
+                                </article>
+                            </Link>
 
                         ))}
                     </div>

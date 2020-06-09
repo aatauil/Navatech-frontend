@@ -7,6 +7,7 @@ import Footer from './Components/Shared/Footer';
 import HomePage from './Routes/HomePage';
 import Evaluation from './Routes/PoolEvalutation';
 import Products from './Routes/Products';
+import SingleProduct from './Routes/SingleProduct'
 import Contact from './Routes/Contact';
 import TopBar from './Components/Shared/TopBar'
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/Evaluation" component={Evaluation}/>
             <Route path="/Products" component={Products}/>
             <Route path="/Contact" component={Contact}/>
+            <Route path="/Product/:id" component={SingleProduct}/>
           </Switch>
         <Footer />
       </div>

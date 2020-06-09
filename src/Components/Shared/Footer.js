@@ -6,8 +6,8 @@ function Footer() {
     return (
         <footer className="bg-gray" >
             <div className="container pt-16 md:pb-16 mx-auto">
-                <div className="flex md:flex-grow flex-col md:flex-row">
-                <div className="xl:w-1/5 px-4  md:border-b-0 md:w-1/3 text-center md:text-left mb-6 border-black w-full">
+                <div className="grid grid-flow-row gap-4 md:grid-cols-4 xl:grid-cols-5">
+                <div className=" md:border-b-0 text-center md:text-left border-black w-full">
                     <h2 className="font-bold text-2xl mb-3 ">Contact</h2>
                     <ol className="list-none mb-10">
                         <li className="pb-2">
@@ -18,7 +18,7 @@ function Footer() {
                         </li>
                     </ol>
                 </div>
-                <div className=" w-1/5 px-4 border-l-2 border-black hidden xl:inline ">
+                <div className=" hidden xl:inline ">
                     <h2 className="font-bold text-2xl mb-3 ">Discover</h2>
                     <nav className="list-none mb-10">
                     <li className="pb-2">
@@ -32,7 +32,7 @@ function Footer() {
                     </li>
                     </nav>
                 </div>
-                <div className="w-full md:w-1/3 xl:w-1/5 px-4 md:border-l-2 border-black text-center md:text-left">
+                <div className=" text-center md:text-left">
                     <h2 className="font-bold text-2xl mb-3 ">General</h2>
                     <ol className="list-none mb-10">
                     <li className="pb-2">
@@ -46,7 +46,7 @@ function Footer() {
                     </li>
                     </ol>
                 </div>
-                <div className="xl:w-1/3 px-4 md:border-l-2 border-black 2/3 hidden md:inline">
+                <div className=" hidden md:inline col-span-2">
                     <h2 className="font-bold text-2xl mb-3">Newsletter</h2>
                     <div className="list-none mb-10">
                     <p>Subscribe to our newsletter and receive product news and promotions</p>
