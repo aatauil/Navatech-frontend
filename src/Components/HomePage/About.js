@@ -11,19 +11,19 @@ function About() {
             <p className="p-6 text-center w-full md:w-2/3 m-auto">We are passionate and keen to create a lovely desired pool temperature experiences for as many pool owners and their families or their users to enjoy. We work with the team at EVOHEAT to assist you in getting the BEST pool heat pump solutions for all your pool heating or pool cooling requirements.</p>
             <ol className="flex justify-center">
                 <li className="hidden md:inline">
-                    <img src={Villa} className="h-56 object-cover "></img>
+                    <img src={Villa} className="h-56 object-cover " alt="Villa"></img>
                     <h3 className="text-center h3-title">Villa</h3>
                 </li>
                 <li className="hidden md:inline">
-                    <img src={Residential} className="h-56 object-cover"></img>
+                    <img src={Residential} className="h-56 object-cover" alt="Residential"></img>
                     <h3 className="text-center h3-title">Residential</h3>
                 </li>
                 <li className="hidden md:inline">
-                    <img src={Hotel} className="h-56 object-cover"></img>
+                    <img src={Hotel} className="h-56 object-cover" alt="Hotel"></img>
                     <h3 className="text-center h3-title">Hotel & Resort</h3>
                 </li>
                 <li className="hidden md:inline">
-                    <img src={Aquatic} className="h-56 object-cover"></img>
+                    <img src={Aquatic} className="h-56 object-cover" alt="Aquatic Center"></img>
                     <h3 className="text-center h3-title">Aquatic center</h3>
                 </li>
             </ol>

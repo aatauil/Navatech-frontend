@@ -5,6 +5,7 @@ const EVOMODELS_QUERY = gql`
     evoheatModels {
         id
         FullName
+        Name
         Description
         Image{
             url

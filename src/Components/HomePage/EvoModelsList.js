@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import EVOMODELS_QUERY from "../../Queries/EVOMODELS_QUERY"
 import { useQuery } from "@apollo/react-hooks";
 import grayCircle from '../../Assets/VectorBased/gray-circle.svg';
@@ -16,7 +17,7 @@ var backgroundCircle = {
     backgroundImage: "url(" +  grayCircle  + ")",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "50% 10% ",
-    backgroundSize: "200px"
+    backgroundSize: "30vh"
 }
 
 
@@ -26,7 +27,8 @@ return (
     <div className="flex md:items-center md:justify-start">
         <h2 className="h2-title text-left p-3">Featured Products</h2>
         <div className="h-1 bg-gray flex-grow hidden md:inline"></div>
-        <button className="p-3 hidden md:inline text-blue">See all</button>
+        <Link to={'/products'}> <button className="p-3 hidden md:inline text-blue">See all</button> </Link>
+       
     </div>
 
     <ol className="p-3 pr-6 flex flex-no-wrap overflow-x-auto md:flex-col md:items-center" >
@@ -39,7 +41,9 @@ return (
                 <div className="w-full flex flex-col items-center md:items-start md:w-1/2">
                     <h3 className="font-bold text-center w-4/5 md:text-left md:text-xl">{models.FullName}</h3>
                     <p className="hidden md:block md:my-4">{models.Description}</p>
-                    <button className=" bg-blue hover:bg-blue-700 text-white text-sm py-2 w-3/5 mt-4 rounded-full flex justify-around items-center md:w-1/3">View Product <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                    <Link to={`/products/${models.Name}`} className="bg-blue hover:bg-blue-700 text-white text-sm py-2 w-3/5 mt-4 rounded-full flex justify-around items-center md:w-1/3">
+                        <button className=" ">View Product <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                    </Link>
                 </div>
             </li>
         ))}

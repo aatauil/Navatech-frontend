@@ -1,5 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { Link } from 'react-router-dom';
 import {faFacebookF,faTwitter,faInstagram,faLinkedin} from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
@@ -11,10 +12,10 @@ function Footer() {
                     <h2 className="font-bold text-2xl mb-3 ">Contact</h2>
                     <ol className="list-none mb-10">
                         <li className="pb-2">
-                            <a className="hover:text-gray-800 ">E: hello@navatech.sg</a>
+                            E: hello@navatech.sg
                         </li>
                         <li>
-                            <a className="hover:text-gray-800">Mob:  +65 9336 8535</a>
+                          Mob:  +65 9336 8535
                         </li>
                     </ol>
                 </div>
@@ -22,13 +23,13 @@ function Footer() {
                     <h2 className="font-bold text-2xl mb-3 ">Discover</h2>
                     <nav className="list-none mb-10">
                     <li className="pb-2">
-                        <a className="hover:text-gray-800">Products</a>
+                        <Link to="/products">Products</Link>
                     </li>
                     <li className="pb-2">
-                        <a className="hover:text-gray-800">Evaluation</a>
+                        <Link to="/Evaluation">Evaluation</Link>
                     </li>
                     <li className="pb-2">
-                        <a className="hover:text-gray-800">Contact</a>
+                        <Link to="/Contact">Contact</Link>
                     </li>
                     </nav>
                 </div>
@@ -36,13 +37,13 @@ function Footer() {
                     <h2 className="font-bold text-2xl mb-3 ">General</h2>
                     <ol className="list-none mb-10">
                     <li className="pb-2">
-                        <a className="hover:text-gray-800">Terms & Services</a>
+                        <a href="/" className="hover:text-gray-800">Terms & Services</a>
                     </li>
                     <li className="pb-2">
-                        <a className="hover:text-gray-800">Privacy Policy</a>
+                        <a href="/" className="hover:text-gray-800">Privacy Policy</a>
                     </li>
                     <li className="pb-2">
-                        <a className="hover:text-gray-800">Cookie Policy</a>
+                        <a href="/" className="hover:text-gray-800">Cookie Policy</a>
                     </li>
                     </ol>
                 </div>
@@ -75,7 +76,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
                 </div>
-                <a href="#" className="hidden md:block text-gold md:text-lg font-bold bg-white px-4 py-2" >NAVATECH</a>
+                <a href="/" className="hidden md:block text-gold md:text-lg font-bold bg-white px-4 py-2" >NAVATECH</a>
                 </div>
             </div>
         <div className="">

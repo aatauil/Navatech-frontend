@@ -24,21 +24,21 @@ function PoolEvalutation() {
                         <fieldset>
                             <legend className="font-bold">What is your pool dimensions: (m³)</legend>
                             <div className="my-4">
-                                <label for="dimension-length" className="hidden"></label>
-                                <input type="number" id="dimension-length" name="dimension-length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
+                                <label htmlFor="dimension-length" className="hidden"></label>
+                                <input type="number" min="0" id="dimension-length" name="dimension-length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
                                 <FontAwesomeIcon icon={faTimes}/>
-                                <label for="dimension-width" className="hidden"></label>
-                                <input type="number" id="dimension-width" name="dimension-width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
+                                <label htmlFor="dimension-width" className="hidden"></label>
+                                <input type="number" min="0" id="dimension-width" name="dimension-width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
                                 <FontAwesomeIcon icon={faTimes}/>
-                                <label for="dimension-depth" className="hidden"></label>
-                                <input type="number" id="dimension-depth" name="dimension-depth"  className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Depth"></input>
+                                <label htmlFor="dimension-depth" className="hidden"></label>
+                                <input type="number" min="0" id="dimension-depth" name="dimension-depth"  className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Depth"></input>
                             </div> 
                         </fieldset>
                         </div>
                         <div className="mt-12">
-                            <label className="font-bold" for="pool-area">What is your pool area:</label>
+                            <label className="font-bold" htmlFor="pool-area">What is your pool area:</label>
                             <div className="my-4">
-                                <input type="number" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
+                                <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
                             </div> 
 
                         </div>
@@ -46,36 +46,36 @@ function PoolEvalutation() {
                             <label className="font-bold">Is your pool an indoor/outdoor pool:</label>
                             <div className="my-4">
                                 <input type="radio" className="mr-2" name="in-outdoor" id="indoor" value="indoor"></input>
-                                <label className="mr-6" for="indoor">Indoor</label>
+                                <label className="mr-6" htmlFor="indoor">Indoor</label>
                                 <input type="radio" className="mr-2" name="in-outdoor" id="outdoor" value="outdoor"></input>
-                                <label for="outdoor">Outdoor</label>
+                                <label htmlFor="outdoor">Outdoor</label>
                             </div> 
 
                         </div>
                         <div className="mt-12">
-                            <label className="font-bold" for="volume">What is your pool volume:</label>
+                            <label className="font-bold" htmlFor="volume">What is your pool volume:</label>
                             <div className="my-4">
-                                <input type="number" name="volume" id="volume" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m³</span>
+                                <input type="number" min="0" name="volume" id="volume" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m³</span>
                             </div> 
 
                         </div>
                         <div className="mt-12">
-                            <label className="font-bold" for="shade">Percentage shade over the pool:</label>
+                            <label className="font-bold" htmlFor="shade">Percentage shade over the pool:</label>
                             <div className="my-4">
-                                <input type="number" name="shade" id="shade" className="p-6 mr-2 w-32 h-12 bg-gray"></input><span className="text-xl">%</span>
+                                <input type="number" min="0" max="100"  name="shade" id="shade" className="p-6 mr-2 w-32 h-12 bg-gray"></input><span className="text-xl">%</span>
                             </div> 
                         </div>
                         <div className="mt-12">
                         <fieldset>
                             <legend className="font-bold">What is your infinity edge or overflow or waterfall dimensions: (m³)</legend>
                             <div className="my-4">
-                                <label for="dimension-length" className="hidden"></label>
-                                <input type="number" id="dimension-length" name="length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
+                                <label htmlFor="overflow-length" className="hidden"></label>
+                                <input type="number" min="0" id="overflow-length" name="length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
                                 <FontAwesomeIcon icon={faTimes}/>
-                                <label for="dimension-width" className="hidden"></label>
-                                <input type="number" id="dimension-width" name="width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
+                                <label htmlFor="overflow-width" className="hidden"></label>
+                                <input type="number" min="0" id="overflow-width" name="width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
                                 <input type="checkbox" className="mx-4" id="no-overflow"></input>
-                                <label className="my-4" name="no-overflow" for="no-overflow">Not Applicable</label>
+                                <label className="my-4" name="no-overflow" htmlFor="no-overflow">Not Applicable</label>
                             </div> 
                         </fieldset>
                         </div>
@@ -83,42 +83,42 @@ function PoolEvalutation() {
                             <label className="font-bold">Do you use a pool cover daily after usage:</label>
                             <div className="my-4">
                                 <input type="radio" className="mr-2" name="pool-cover" id="cover-yes" value="cover-yes"></input>
-                                <label className="mr-6" for="cover-yes">Yes</label>
+                                <label className="mr-6" htmlFor="cover-yes">Yes</label>
                                 <input type="radio" className="mr-2" name="pool-cover" id="cover-no" value="cover-no"></input>
-                                <label for="cover-no">No</label>
+                                <label htmlFor="cover-no">No</label>
                             </div> 
 
                         </div>
                         <div className="mt-12">
-                            <label className="font-bold" for="pool-users">What is the number of pool users per day:</label>
+                            <label className="font-bold" htmlFor="pool-users">What is the number of pool users per day:</label>
                             <div className="my-4">
-                                <input type="number" name="pool-users" id="pool-users" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className=""> Users</span>
+                                <input type="number" min="0" name="pool-users" id="pool-users" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className=""> Users</span>
                             </div> 
                         </div>
                         <div className="mt-12">
                             <label className="font-bold">What is your pool colour:</label>
                             <div className="my-4">
                                 <input type="radio" className="mr-2" name="pool-color" id="color-light" value="color-light"></input>
-                                <label className="mr-6" for="color-light">Light</label>
+                                <label className="mr-6" htmlFor="color-light">Light</label>
                                 <input type="radio" className="mr-2" name="pool-color" id="color-dark" value="color-dark"></input>
-                                <label for="color-dark">Dark</label>
+                                <label htmlFor="color-dark">Dark</label>
                             </div> 
                         </div>
                         <div className="mt-12">
-                            <label className="font-bold" for="temperature">What is your desired pool temperature:</label>
+                            <label className="font-bold" htmlFor="temperature">What is your desired pool temperature:</label>
                             <div className="my-4">
-                                <input type="number" name="temperature" id="temperature" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">Degrees Celsius</span>
+                                <input type="number" min="0" name="temperature" id="temperature" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">Degrees Celsius</span>
                             </div> 
                         </div>
                         <div className="mt-12">
                         <fieldset>
                             <legend className="font-bold">What are your pool operating hours:</legend>
                             <div className="my-4">
-                                <label for="pm" className="hidden"></label>
-                                <input type="number" id="am" name="am" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="am"></input>
+                                <label htmlFor="pm" className="hidden"></label>
+                                <input type="number" min="0" max="12" id="am" name="am" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="am"></input>
                                 <FontAwesomeIcon icon={faArrowsAltH}/>
-                                <label for="pm" className="hidden"></label>
-                                <input type="number" id="pm" name="pm" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="pm"></input>
+                                <label htmlFor="pm" className="hidden"></label>
+                                <input type="number" min="0" max="12" id="pm" name="pm" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="pm"></input>
             
                             </div> 
                         </fieldset>
@@ -127,28 +127,28 @@ function PoolEvalutation() {
                             <label className="font-bold">What is water pump & filtration system operational timing:</label>
                             <div className="my-4">
                                 <input type="radio" className="mr-2" name="filtration" id="twelve" value="twelve"></input>
-                                <label className="mr-6" for="twelve">12 hours</label>
+                                <label className="mr-6" htmlFor="twelve">12 hours</label>
                                 <input type="radio" className="mr-2" name="filtration" id="twenty-four" value="twenty-four"></input>
-                                <label className="mr-6" for="twenty-four" >24 hours</label>
+                                <label className="mr-6" htmlFor="twenty-four" >24 hours</label>
                                 <input type="radio" className="mr-2" name="filtration" id="seven-to-ten" value="seven-to-ten"></input>
-                                <label for="seven-to-ten" >7am-10pm</label>
+                                <label htmlFor="seven-to-ten" >7am-10pm</label>
                             </div> 
                         </div>
                         <div className="mt-12">
                             <label className="font-bold">What is the wind effect:</label>
                             <div className="my-4">
                                 <input type="radio" className="mr-2" name="wind-effect" id="sheltered" value="sheltered"></input>
-                                <label className="mr-6" for="sheltered">Sheltered No Wind</label>
+                                <label className="mr-6" htmlFor="sheltered">Sheltered No Wind</label>
                                 <input type="radio" className="mr-2" name="wind-effect" id="suburban" value="suburban"></input>
-                                <label className="mr-6" for="suburban" >Normal Suburban</label>
+                                <label className="mr-6" htmlFor="suburban" >Normal Suburban</label>
                                 <input type="radio" className="mr-2" name="wind-effect" id="high-wind" value="high-wind"></input>
-                                <label for="high-wind" >High Wind</label>
+                                <label htmlFor="high-wind" >High Wind</label>
                             </div> 
                         </div>
                         <div className="mt-12">
-                            <label className="font-bold" for="electricity">What is your electricity tariff rate:</label>
+                            <label className="font-bold" htmlFor="electricity">What is your electricity tariff rate:</label>
                             <div className="my-4">
-                                <input type="number" name="electricity" id="electricity" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">cents USD per kWh</span>
+                                <input type="number" min="0" name="electricity" id="electricity" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">cents USD per kWh</span>
                             </div> 
                         </div>
                     </div>
@@ -159,37 +159,37 @@ function PoolEvalutation() {
                     </h2>
                      <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
                         <div className="mt-6">
-                                <label className="font-bold" for="first-name">First Name:</label>
+                                <label className="font-bold" htmlFor="first-name">First Name:</label>
                                 <div className="my-4">
                                     <input type="text" name="first-name" id="first-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" for="electricity">Last Name:</label>
+                                <label className="font-bold" htmlFor="last-name">Last Name:</label>
                                 <div className="my-4">
-                                    <input type="number" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="number" min="0" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" for="electricity">Name:</label>
+                                <label className="font-bold" htmlFor="Name">Name:</label>
                                 <div className="my-4">
-                                    <input type="number" name="electricity" id="electricity" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="number" min="0" name="Name" id="Name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" for="electricity">Phone Number:</label>
+                                <label className="font-bold" htmlFor="electricity">Phone Number:</label>
                                 <div className="my-4">
                                     <input type="tel" name="phone-number:" id="phone-number:" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" for="email">E-mail:</label>
+                                <label className="font-bold" htmlFor="email">E-mail:</label>
                                 <div className="my-4">
                                     <input type="e-mail" name="email" id="email" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" for="country">Country:</label>
+                                <label className="font-bold" htmlFor="country">Country:</label>
                                 <div className="my-4">
                                 <CreatableSelect className="mr-2  h-12 "  isClearable  options={countryOptions}/>
                                 </div> 
@@ -201,7 +201,7 @@ function PoolEvalutation() {
                      </div>
                      <div className="flex justify-center items-center my-6">
                          <input type="checkbox" id="privacy" name="privacy" className="mr-4"></input>
-                         <label for="privacy" className="font-bold">I have read and agreed to the privacy policy of NAVATECH.</label>
+                         <label htmlFor="privacy" className="font-bold">I have read and agreed to the privacy policy of NAVATECH.</label>
                      </div>
                      <div className="w-full flex justify-center mt-12">
                      <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>

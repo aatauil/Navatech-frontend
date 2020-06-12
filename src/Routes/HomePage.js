@@ -10,7 +10,8 @@ function HomePage() {
     var backgroundCircle = {
         backgroundImage: "url(" +  grayCircle  + ")",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "-250px 20px"
+        backgroundPosition: "-10vw 1%",
+        backgroundSize: "30%"
 
     }
     return (
