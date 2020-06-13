@@ -46,7 +46,7 @@ function SingleProduct() {
 
                 <div className=" w-full">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Best suited for</h2>
-                    <ul className=" h-64">
+                    <ul className=" md:h-64">
                     {productData.best_suited_fors.map(product => (
                      <li key={product.id} className="font-bold py-2 pl-2 bg-gray my-2">{product.Type}</li>
                     ))}
@@ -65,7 +65,7 @@ function SingleProduct() {
                 <div className="w-full">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Ship Freight</h2>
                     <ReactMarkdown
-                    className=" h-64"
+                    className=" md:h-64"
                     source={productData.Freight}
                     escapeHtml={false}
                     />

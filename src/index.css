@@ -47,14 +47,21 @@ a{
   direction: rtl;
 }
 
-.alternate{
-  
+.hover-article:hover{
+  transition: all .1s;
+  transform: translateY(-5%);
+  box-shadow: 0px 0px 15px rgb(228, 228, 228)
 }
 
-.alternate:nth-child(even){
-  flex-direction: row-reverse;
+button:hover{
+  transition: all .1s;
+  transform: translateY(-5%);
+  box-shadow: 0px 0px 15px rgb(228, 228, 228)
 }
 
+button{
+  transition: all .1s;
+}
 
 
 @tailwind utilities;

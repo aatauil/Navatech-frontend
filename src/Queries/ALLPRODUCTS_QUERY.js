@@ -1,9 +1,8 @@
 import gql from "graphql-tag";
 
-
 const ALLPRODUCTS_QUERY = gql`
 query allProducts($model: String, $suited: String) {
-    allProducts(where: {model_in: [$model] , best_suited_fors_in: [$suited ]}){
+    allProducts(where: {model_in: [$model] , best_suited_fors_in: [$suited]}){
         id
         Name
         MainImage{

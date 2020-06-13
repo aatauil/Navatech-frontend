@@ -41,8 +41,8 @@ return (
                 <div className="w-full flex flex-col items-center md:items-start md:w-1/2">
                     <h3 className="font-bold text-center w-4/5 md:text-left md:text-xl">{models.FullName}</h3>
                     <p className="hidden md:block md:my-4">{models.Description}</p>
-                    <Link to={`/products/${models.Name}`} className="bg-blue hover:bg-blue-700 text-white text-sm py-2 w-3/5 mt-4 rounded-full flex justify-around items-center md:w-1/3">
-                        <button className=" ">View Product <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                    <Link to={`/products/${models.Name}`} className="w-3/5 md:w-1/3">
+                        <button className="bg-blue hover:bg-blue-700 text-white text-sm py-2  mt-4 rounded-full flex justify-around items-center  w-full">View Product <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                     </Link>
                 </div>
             </li>
