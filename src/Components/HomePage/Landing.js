@@ -25,7 +25,7 @@ function Landing() {
                 </div>
             </div>
             <div className="hidden w-2/4 md:flex justify-center items-center">
-                <img className="w-3/5" alt="Product" src={"http://localhost:1337" + data.landingPage.Image.url}></img>
+                <img className="w-3/5" alt="Product" src={"https://navatech.herokuapp.com" + data.landingPage.Image.url}></img>
             </div>
 
             </div>

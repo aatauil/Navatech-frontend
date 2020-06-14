@@ -26,12 +26,12 @@ function SingleProduct() {
                 <div className=" w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">
                     {productData.Images.slice(0, 3).map(product => (
-                        <div className="w-16 h-16 border border-black" key={product.Name} onClick={() => setTopImage("http://localhost:1337" + product.url)}>
-                            <img className="p-1 object-cover" alt={product.Name} src={"http://localhost:1337" + product.url} ></img>
+                        <div className="w-16 h-16 border border-black" key={product.Name} onClick={() => setTopImage("https://navatech.herokuapp.com" + product.url)}>
+                            <img className="p-1 object-cover" alt={product.Name} src={"https://navatech.herokuapp.com" + product.url} ></img>
                         </div>
                     ))}
                     </div>
-                    <img className="mx-auto h-full" alt="active product" src={topImage ? topImage : `http://localhost:1337${productData.Images[0].url}`}></img>
+                    <img className="mx-auto h-full" alt="active product" src={topImage ? topImage : `https://navatech.herokuapp.com${productData.Images[0].url}`}></img>
                 </div>
 
                 <div className=" w-full">
@@ -87,7 +87,7 @@ function SingleProduct() {
                         {productData.model.Products.map(product => (
                             <Link to={`/Product/${product.id}`}>
                                 <article className="border border-black rounded flex flex-col justify-end">
-                                <img className="mx-auto" alt={product.Name} src={"http://localhost:1337" + product.MainImage.url}></img>
+                                <img className="mx-auto" alt={product.Name} src={"https://navatech.herokuapp.com" + product.MainImage.url}></img>
                                 <h2 className="font-bold text-center text-lg py-4">{product.Name}</h2>
                                 </article>
                             </Link>

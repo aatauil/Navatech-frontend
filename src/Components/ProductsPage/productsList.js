@@ -49,7 +49,7 @@ const ProductsList = React.forwardRef((props,ref) => {
                         {data.allProducts.map(product => (
                             <Link to={`/Product/${product.id}`} key={product.id}>
                                 <article  className="transition delay-100 hover:shadow border border-black rounded flex flex-col h-full justify-end">
-                                <img className="mx-auto" alt={product.Name} src={"http://localhost:1337" + product.MainImage.url}></img>
+                                <img className="mx-auto" alt={product.Name} src={"https://navatech.herokuapp.com" + product.MainImage.url}></img>
                                 <h2 className="font-bold text-center text-lg py-4">{product.Name}</h2>
                                 </article>
                             </Link>

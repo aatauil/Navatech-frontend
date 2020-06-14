@@ -4,7 +4,7 @@ import { HttpLink } from "apollo-link-http";
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: `https://navatech.herokuapp.com/`
+  uri: `https://navatech.herokuapp.com/graphql`
 });
 
 const client = new ApolloClient({
