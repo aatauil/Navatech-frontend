@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { useQuery } from "@apollo/react-hooks";
 import ALLPRODUCTS_QUERY from "../../Queries/ALLPRODUCTS_QUERY"
+import Skeleton from '@yisheng90/react-loading';
 
 
 const ProductsList = React.forwardRef((props,ref) => {
@@ -33,7 +34,41 @@ const ProductsList = React.forwardRef((props,ref) => {
     }));
 
     const { loading, error, data, refetch } = useQuery(ALLPRODUCTS_QUERY);
-    if (loading) return 'Loading...';
+    if (loading) return (
+        <div className=" md:w-8/12 w-full">   
+                    <div className="box-border hidden md:flex  justify-between">
+                    <div className="px-6 py-2 bg-gray font-bold">... Results </div> 
+                        {/* <Select options={sortBy} placeholder="Sort by" className="w-64"/> */}
+                    </div>
+                    <div className=" grid grid-flow-row sm:grid-cols-2 m-2 h-auto gap-6 sm:my-6 ">
+                                <article  className=" border border-black rounded p-10  flex flex-col h-full items-center">
+                                    <Skeleton height="10rem" circle />
+                                    <Skeleton width="100%" height="25px"/>
+                                </article>
+                                <article  className=" border border-black rounded p-10  flex flex-col h-full items-center">
+                                    <Skeleton height="10rem" circle />
+                                    <Skeleton width="100%" height="25px"/>
+                                </article>
+                                <article  className=" border border-black rounded p-10  flex flex-col h-full items-center">
+                                    <Skeleton height="10rem" circle />
+                                    <Skeleton width="100%" height="25px"/>
+                                </article>
+                                <article  className=" border border-black rounded p-10  flex flex-col h-full items-center">
+                                    <Skeleton height="10rem" circle />
+                                    <Skeleton width="100%" height="25px"/>
+                                </article>
+                                <article  className=" border border-black rounded p-10  flex flex-col h-full items-center">
+                                    <Skeleton height="10rem" circle />
+                                    <Skeleton width="100%" height="25px"/>
+                                </article>
+                                <article  className=" border border-black rounded p-10  flex flex-col h-full items-center">
+                                    <Skeleton height="10rem" circle />
+                                    <Skeleton width="100%" height="25px"/>
+                                </article>
+                    </div>
+
+            </div>
+    );
     if (error) return `Error! ${error.message}`;
 
 
