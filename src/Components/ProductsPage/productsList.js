@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { useQuery } from "@apollo/react-hooks";
 import ALLPRODUCTS_QUERY from "../../Queries/ALLPRODUCTS_QUERY"
-import client from '../../Utils/ApolloClient'
 
 
 const ProductsList = React.forwardRef((props,ref) => {
@@ -33,7 +32,7 @@ const ProductsList = React.forwardRef((props,ref) => {
         }
     }));
 
-    const { loading, error, data, refetch } = useQuery(ALLPRODUCTS_QUERY );
+    const { loading, error, data, refetch } = useQuery(ALLPRODUCTS_QUERY);
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
 
