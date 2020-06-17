@@ -17,6 +17,11 @@ function SingleProduct() {
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     let productData = data.allProduct;
+    let currentID = productData.id
+    console.log(currentID)
+    const similar = productData.model.Products
+    const filtered = similar.filter(product => product.id != currentID)
+    console.log(filtered)
 
     
     return (
@@ -26,7 +31,7 @@ function SingleProduct() {
                 <div className=" w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">
                     {productData.Images.slice(0, 3).map(product => (
-                        <div className="w-16 h-16 border border-black" key={product.Name} onClick={() => setTopImage("https://navatech.herokuapp.com" + product.url)}>
+                        <div className="w-16 h-16 border border-black" key={product.id} onClick={() => setTopImage("https://navatech.herokuapp.com" + product.url)}>
                             <img className="p-1 object-cover" alt={product.Name} src={"https://navatech.herokuapp.com" + product.url} ></img>
                         </div>
                     ))}
@@ -48,6 +53,7 @@ function SingleProduct() {
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Best suited for</h2>
                     <ul className=" md:h-64">
                     {productData.best_suited_fors.map(product => (
+                        
                      <li key={product.id} className="font-bold py-2 pl-2 bg-gray my-2">{product.Type}</li>
                     ))}
                     </ul>
@@ -84,9 +90,9 @@ function SingleProduct() {
                         Similar Products
                     </h2>
                     <div className=" grid grid-flow-row md:grid-cols-3 my-6 p-2  gap-6 ">
-                        {productData.model.Products.map(product => (
-                            <Link to={`/Product/${product.id}`}>
-                                <article className="border border-black rounded flex flex-col justify-end">
+                        {filtered.map(product => (
+                            <Link key={product.id} to={`/Product/${product.id}`}>
+                                <article  className="border border-black rounded flex flex-col justify-end">
                                 <img className="mx-auto" alt={product.Name} src={"https://navatech.herokuapp.com" + product.MainImage.url}></img>
                                 <h2 className="font-bold text-center text-lg py-4">{product.Name}</h2>
                                 </article>
