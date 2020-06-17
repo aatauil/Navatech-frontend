@@ -13,7 +13,7 @@ function Header() {
     if (showMenu){
         mMenu = 
         <div className="w-4/5 z-50 bg-white h-screen absolute right-0 top-0 ">
-                <ol className="flex flex-col mt-40">
+                <ol className="flex flex-col mt-40 p-6">
                     <Link to="/">
                         <li className="py-8 border-t border-black border-b w-full text-center">Home</li>
                     </Link>
