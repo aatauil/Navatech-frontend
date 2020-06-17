@@ -1,18 +1,10 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faTimes , faArrowsAltH} from "@fortawesome/free-solid-svg-icons"
-import CreatableSelect from 'react-select/creatable';
 import countries from '../Assets/JSON/countries';
 
 function PoolEvalutation() {
 
-    const countryOptions = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-      ]
-
-      console.log(countries)
 
     return (
         <section className="my-16 container m-auto">

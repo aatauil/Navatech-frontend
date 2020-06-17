@@ -1,5 +1,4 @@
 import React, {useImperativeHandle} from 'react'
-import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { useQuery } from "@apollo/react-hooks";
 import ALLPRODUCTS_QUERY from "../../Queries/ALLPRODUCTS_QUERY"
@@ -12,7 +11,7 @@ const ProductsList = React.forwardRef((props,ref) => {
 
         refetchModel(e){
             
-            if(e == 'All'){
+            if(e === 'All'){
                 refetch({model: undefined})
             } else {
                 refetch({model: e})
@@ -21,7 +20,7 @@ const ProductsList = React.forwardRef((props,ref) => {
         },
 
         refetchSuited(e){
-            if(e == 'All'){
+            if(e === 'All'){
                 refetch({suited: undefined})
             } else {
             refetch({suited: e})

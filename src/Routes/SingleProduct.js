@@ -19,7 +19,7 @@ function SingleProduct() {
     let productData = data.allProduct;
     let currentID = productData.id
     const similar = productData.model.Products
-    const filtered = similar.filter(product => product.id != currentID)
+    const filtered = similar.filter(product => product.id !== currentID)
 
     
     return (

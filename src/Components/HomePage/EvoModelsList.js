@@ -36,7 +36,7 @@ return (
             
             <li style={backgroundCircle}  key={models.id} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-8 " key={models.id}>
                 <div className="md:w-1/2 h-auto">
-                    <img className="pt-6 pb-6 object-cover h-auto md:m-auto" src={"https://navatech.herokuapp.com" + models.Image.url} ></img>
+                    <img className="pt-6 pb-6 object-cover h-auto md:m-auto" src={"https://navatech.herokuapp.com" + models.Image.url} alt={models.Name} ></img>
                 </div>
                 <div className="w-full flex flex-col items-center md:items-start md:w-1/2">
                     <h3 className="font-bold text-center w-4/5 md:text-left md:text-xl">{models.FullName}</h3>

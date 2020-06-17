@@ -63,16 +63,16 @@ function Footer() {
                 <div className="container flex justify-center md:justify-between items-center mx-auto">
                 
                 <div className="inline-flex justify-center md:justify-start md:w-auto text-xl">
-                    <a className="text-gray-500 bg-white px-4 py-2 text-blue">
+                    <a href="https://facebook.com" className="text-gray-500 bg-white px-4 py-2 text-blue" >
                         <FontAwesomeIcon icon={faFacebookF}/>
                     </a>
-                    <a className="hidden ml-3 text-gray-500 bg-white px-4 py-2  text-blue">
+                    <a href="https://twitter.com" className="hidden ml-3 text-gray-500 bg-white px-4 py-2  text-blue">
                         <FontAwesomeIcon icon={faTwitter}/>
                     </a>
-                    <a className="hidden ml-3 text-gray-500 bg-white px-4 py-2">
+                    <a href="https://instagram.com" className="hidden ml-3 text-gray-500 bg-white px-4 py-2">
                         <FontAwesomeIcon icon={faInstagram}/>
                     </a>
-                    <a className="ml-3 text-gray-500 bg-white px-4 py-2 text-blue">
+                    <a href="https://linkedin.com" className="ml-3 text-gray-500 bg-white px-4 py-2 text-blue">
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
                 </div>

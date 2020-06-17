@@ -1,9 +1,8 @@
 import React,{useState, useRef}  from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faFilter, faTimes} from "@fortawesome/free-solid-svg-icons"
+import {faFilter} from "@fortawesome/free-solid-svg-icons"
 import FILTERITEMS_QUERY from "../Queries/FILTERITEMS_QUERY"
 import { useQuery } from "@apollo/react-hooks";
-import { Link } from 'react-router-dom';
 import ProductsList from '../Components/ProductsPage/productsList';
 
 function Products(props) {
