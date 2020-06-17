@@ -18,10 +18,8 @@ function SingleProduct() {
     if (error) return `Error! ${error.message}`;
     let productData = data.allProduct;
     let currentID = productData.id
-    console.log(currentID)
     const similar = productData.model.Products
     const filtered = similar.filter(product => product.id != currentID)
-    console.log(filtered)
 
     
     return (
