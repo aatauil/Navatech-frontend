@@ -11,11 +11,11 @@ function Features() {
     }
 
     return ( 
-        <div className="text-xs my-10 flex flex-col max-w-screen-xl mx-auto ">
-            <div className="flex md:items-center md:justify-center">
-            <div className="h-1 bg-gray w-1/3 hidden md:inline"></div>
-             <h2 className="text-center h2-title md:w-1/4 w-full p-3 ">Features</h2>
-             <div className="h-1 bg-gray w-1/3 hidden md:inline"></div>
+        <div className="hidden md:block text-xs my-10 flex flex-col max-w-screen-xl mx-auto ">
+            <div className="flex items-center justify-center">
+            <div className="h-1 bg-gray w-1/3 inline"></div>
+             <h2 className="text-center h2-title w-1/4 p-3 ">Features</h2>
+             <div className="h-1 bg-gray w-1/3 inline"></div>
              </div>
              <div className="md:flex md:my-16">
              <ol className="text-center px-4 md:w-1/3 md:list-disc list-inside direction-rtl">

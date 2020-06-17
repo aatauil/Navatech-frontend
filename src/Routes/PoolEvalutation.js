@@ -32,6 +32,11 @@ function PoolEvalutation() {
                                 <FontAwesomeIcon icon={faTimes}/>
                                 <label htmlFor="dimension-depth" className="hidden"></label>
                                 <input type="number" min="0" id="dimension-depth" name="dimension-depth"  className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Depth"></input>
+                                <div className="mt-6">                                
+                                    <input type="checkbox" className="mx-4" id="no-overflow"></input>
+                                    <label className="my-4" name="no-overflow" htmlFor="no-overflow">Free form pool</label>
+                                </div>
+
                             </div> 
                         </fieldset>
                         </div>
@@ -39,6 +44,13 @@ function PoolEvalutation() {
                             <label className="font-bold" htmlFor="pool-area">What is your pool area:</label>
                             <div className="my-4">
                                 <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
+                            </div> 
+
+                        </div>
+                        <div className="mt-12">
+                            <label className="font-bold" htmlFor="volume">What is your pool volume:</label>
+                            <div className="my-4">
+                                <input type="number" min="0" name="volume" id="volume" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m³</span>
                             </div> 
 
                         </div>
@@ -52,13 +64,7 @@ function PoolEvalutation() {
                             </div> 
 
                         </div>
-                        <div className="mt-12">
-                            <label className="font-bold" htmlFor="volume">What is your pool volume:</label>
-                            <div className="my-4">
-                                <input type="number" min="0" name="volume" id="volume" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m³</span>
-                            </div> 
-
-                        </div>
+                       
                         <div className="mt-12">
                             <label className="font-bold" htmlFor="shade">Percentage shade over the pool:</label>
                             <div className="my-4">
@@ -171,12 +177,6 @@ function PoolEvalutation() {
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" htmlFor="Name">Name:</label>
-                                <div className="my-4">
-                                    <input type="number" min="0" name="Name" id="Name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
-                                </div> 
-                        </div>
-                        <div className="mt-6">
                                 <label className="font-bold" htmlFor="electricity">Phone Number:</label>
                                 <div className="my-4">
                                     <input type="tel" name="phone-number:" id="phone-number:" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
@@ -186,6 +186,13 @@ function PoolEvalutation() {
                                 <label className="font-bold" htmlFor="email">E-mail:</label>
                                 <div className="my-4">
                                     <input type="e-mail" name="email" id="email" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                </div> 
+                        </div>
+                        
+                        <div className="mt-6">
+                                <label className="font-bold" htmlFor="location">Pool location (state): </label>
+                                <div className="my-4">
+                                    <input type="text" name="location" id="location" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
