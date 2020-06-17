@@ -100,7 +100,6 @@ function Products(props) {
                 
                 <ProductsList ref={childRef} />
 
-                
             </section>
         </section>
     )

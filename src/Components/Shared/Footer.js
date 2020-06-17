@@ -66,10 +66,10 @@ function Footer() {
                     <a className="text-gray-500 bg-white px-4 py-2 text-blue">
                         <FontAwesomeIcon icon={faFacebookF}/>
                     </a>
-                    <a className="ml-3 text-gray-500 bg-white px-4 py-2  text-blue">
+                    <a className="hidden ml-3 text-gray-500 bg-white px-4 py-2  text-blue">
                         <FontAwesomeIcon icon={faTwitter}/>
                     </a>
-                    <a className="ml-3 text-gray-500 bg-white px-4 py-2">
+                    <a className="hidden ml-3 text-gray-500 bg-white px-4 py-2">
                         <FontAwesomeIcon icon={faInstagram}/>
                     </a>
                     <a className="ml-3 text-gray-500 bg-white px-4 py-2 text-blue">

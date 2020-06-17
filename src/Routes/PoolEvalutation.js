@@ -2,6 +2,7 @@ import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faTimes , faArrowsAltH} from "@fortawesome/free-solid-svg-icons"
 import CreatableSelect from 'react-select/creatable';
+import countries from '../Assets/JSON/countries';
 
 function PoolEvalutation() {
 
@@ -10,6 +11,8 @@ function PoolEvalutation() {
         { value: 'strawberry', label: 'Strawberry' },
         { value: 'vanilla', label: 'Vanilla' }
       ]
+
+      console.log(countries)
 
     return (
         <section className="my-16 container m-auto">
@@ -163,7 +166,7 @@ function PoolEvalutation() {
                     <h2 className="h3-title text-left border-b-2 border-black">
                     Personal Information
                     </h2>
-                     <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
+                    <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="first-name">First Name:</label>
                                 <div className="my-4">
@@ -196,26 +199,32 @@ function PoolEvalutation() {
                                 </div> 
                         </div>
                         <div className="mt-6">
-                                <label className="font-bold" htmlFor="country">Country:</label>
-                                <div className="my-4">
-                                <CreatableSelect className="mr-2  h-12 "  isClearable  options={countryOptions}/>
-                                </div> 
+                        <label className="font-bold" htmlFor="country">Country:</label>
+                            <div className="relative">
+                                <select className="my-4 block cursor-pointer appearance-none w-full bg-gray-200 border border-black py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-dark" id="grid-state">
+                                    <option>Select your country</option>
+                                    {countries.map(country => (
+                                        <option value={country} key={country}>{country}</option>
+                                    ))}
+                                </select>
+                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>     
                         </div>
-                     </div>
-                     <div className="mt-6 flex flex-col">
+                    </div>
+                    <div className="mt-6 flex flex-col">
                         <label className="font-bold">Message:</label>
                         <textarea className="bg-gray  my-4 h-64"></textarea>
-                     </div>
-                     <div className="flex justify-center items-center my-6">
-                         <input type="checkbox" id="privacy" name="privacy" className="mr-4"></input>
-                         <label htmlFor="privacy" className="font-bold">I have read and agreed to the privacy policy of NAVATECH.</label>
-                     </div>
-                     <div className="w-full flex justify-center mt-12">
-                     <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>
-                     </div>
+                    </div>
+                    <div className="flex justify-center items-center my-6">
+                        <input type="checkbox" id="privacy" name="privacy" className="mr-4"></input>
+                        <label htmlFor="privacy" className="font-bold">I have read and agreed to the privacy policy of NAVATECH.</label>
+                    </div>
+                    <div className="w-full flex justify-center mt-12">
+                        <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>
+                    </div>
                 </article>
-
-
             </form>
         </section>
     )
