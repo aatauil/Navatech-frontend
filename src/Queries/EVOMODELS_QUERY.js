@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const EVOMODELS_QUERY = gql`
     query Evomodels {
-    evoheatModels {
+    evoheatModels(limit: 4) {
         id
         FullName
         Name
