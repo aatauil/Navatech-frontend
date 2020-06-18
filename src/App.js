@@ -1,5 +1,5 @@
 import React from 'react';
-import { ApolloProvider } from "react-apollo";
+import { ApolloProvider } from "@apollo/react-hooks";
 import client from "./Utils/ApolloClient";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import MHeader from './Components/Shared/Header';
