@@ -13,7 +13,7 @@ function SingleProduct() {
     const [topImage, setTopImage] = useState(false);
         
     let productId = useParams()
-    const { loading, error, data } = useQuery( SINGLEPRODUCT_QUERY, { variables: { productId: productId.id} });
+    const { loading, error, data } = useQuery( SINGLEPRODUCT_QUERY, { variables: { singleProductId: productId.id} });
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     let productData = data.allProduct;

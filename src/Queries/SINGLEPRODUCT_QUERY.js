@@ -1,8 +1,8 @@
 import gql from "graphql-tag";
 
 const SINGLEPRODUCT_QUERY = gql`
-    query Singleproduct($productId: ID!){
-        allProduct(id: $productId){
+    query Singleproduct($singleProductId: ID!){
+        allProduct(id: $singleProductId){
             id
             Name
             Description
@@ -14,6 +14,7 @@ const SINGLEPRODUCT_QUERY = gql`
             Freight
             Bulk
             model{
+                id
                 Products(limit: 4){
                     id
                     Name
