@@ -34,7 +34,7 @@ return (
     <ol className="p-3 flex flex-no-wrap overflow-x-auto flex-col md:items-center" >
         {data.evoheatModels.map(models => (
             
-            <li style={backgroundCircle}  key={models.id} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-8 " key={models.id}>
+            <li style={backgroundCircle} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-8 " key={models.id}>
                 <div className="md:w-1/2 h-auto">
                     <img className="pt-6 pb-6 object-cover h-auto md:m-auto" src={"https://navatech.herokuapp.com" + models.Image.url} alt={models.Name} ></img>
                 </div>
