@@ -8,7 +8,7 @@ function PoolEvalutation() {
 
     return (
         <section className="my-16 container m-auto">
-            <h1 className="h1-title mb-6">POOL HEATING EVALUATION</h1>
+            <h1 className="h1-title mb-6">POOL <span className="text-red">HEATING</span>  EVALUATION</h1>
             <form>
                 <article className="p-12 border-2 border-dark">
                     <h2 className="h3-title text-left border-b-2 border-black">
@@ -185,7 +185,7 @@ function PoolEvalutation() {
                         </div>
                         
                         <div className="mt-6">
-                                <label className="font-bold" htmlFor="location">Pool location (state): </label>
+                                <label className="font-bold" htmlFor="location">Pool Location (State/City): </label>
                                 <div className="my-4">
                                     <input type="text" name="location" id="location" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 

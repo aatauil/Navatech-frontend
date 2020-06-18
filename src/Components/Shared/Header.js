@@ -45,7 +45,7 @@ function Header() {
             <span className="text-xl md:hidden">
                 <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)}/>
             </span>
-                <ol className="hidden md:flex md:w-2/4 md:text-sm justify-evenly ">
+                <ol className="hidden md:flex md:w-2/6 md:text-sm justify-between ">
                     <Link to="/">
                         <li className="py-8 md:py-2 border-t border-black border-b w-full md:border-none text-center">HOME</li>
                     </Link>
