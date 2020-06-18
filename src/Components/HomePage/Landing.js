@@ -19,9 +19,11 @@ function Landing() {
             <div className="hidden md:block bg-white shadow p-6 mt-6 w-full md:w-3/5">
                 <h2 className="font-bold text-xl">Suitable Product</h2>
                 <p className="font-bold text-sm pt-2">Discover the perfect heating solution for your pool or spa</p>
-                <Link to={'/Evaluation'}>
+                <div className="w-full m-auto">
+                <Link to={'/Evaluation'} >
                     <button className="bg-blue hover:bg-blue-700 text-white text-sm py-2 w-2/5 mt-4 rounded-full ">Discover</button>
                 </Link>
+                </div>
             </div>
         </div>
         </div>
