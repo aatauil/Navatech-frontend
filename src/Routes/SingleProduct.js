@@ -29,12 +29,15 @@ function SingleProduct() {
                 <div className=" w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">
                     {productData.Images.slice(0, 3).map(product => (
-                        <div className="w-16 h-16 border border-black" key={product.id} onClick={() => setTopImage("https://navatech.herokuapp.com" + product.url)}>
-                            <img className="p-1 object-cover" alt={product.Name} src={"https://navatech.herokuapp.com" + product.url} ></img>
+                        <div className="w-16 h-16 flex items-center border border-black m-auto" key={product.id} onClick={() => setTopImage("https://navatech.herokuapp.com" + product.url)}>
+                            <img className="p-1" alt={product.Name} src={"https://navatech.herokuapp.com" + product.url} ></img>
                         </div>
                     ))}
                     </div>
-                    <img className="mx-auto h-full" alt="active product" src={topImage ? topImage : `https://navatech.herokuapp.com${productData.Images[0].url}`}></img>
+                    <div className="m-auto">
+                        <img className="m-auto " alt="active product" src={topImage ? topImage : `https://navatech.herokuapp.com${productData.Images[0].url}`}></img>
+                    </div>
+                  
                 </div>
 
                 <div className=" w-full">
