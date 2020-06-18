@@ -8,7 +8,7 @@ import ProductsList from '../Components/ProductsPage/productsList';
 function Products(props) {
     const [showFilter, setShowFilter] = useState(false)
     const childRef = useRef();
-
+    console.log(showFilter)
     const { loading, error, data} = useQuery(FILTERITEMS_QUERY);
 
 
