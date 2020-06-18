@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const ALLPRODUCTS_QUERY = gql`
 query allProducts($model: String, $suited: String) {
-    allProducts(sort: "Name:desc", where: {model_in: [$model] , best_suited_fors_in: [$suited]}){
+    allProducts(sort: "Position:asc", where: {model_in: [$model] , best_suited_fors_in: [$suited]}){
         id
         Name
         MainImage{

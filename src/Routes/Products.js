@@ -10,6 +10,8 @@ function Products(props) {
     const childRef = useRef();
 
     const { loading, error, data} = useQuery(FILTERITEMS_QUERY);
+
+
     if (loading) return (
         <section className="my-16 container m-auto">
             <div className=" pt-4 flex justify-between m-auto items-center mb-8 md:w-full">
@@ -53,7 +55,6 @@ function Products(props) {
         </section>
     );
     if (error) return `Error! ${error.message}`;
-
 
     return (
         <section className="my-16 container m-auto">
