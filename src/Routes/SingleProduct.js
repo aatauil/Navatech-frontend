@@ -23,9 +23,9 @@ function SingleProduct() {
 
     
     return (
-        <section className="my-16 container m-auto">
+        <section className="my-16 p-3 container m-auto">
             <div>Products/product</div>
-            <section className="grid grid-cols-1 p-2 md:p-0 md:grid-cols-2 gap-10 my-6">
+            <section className="grid grid-cols-1 md:p-0 md:grid-cols-2 gap-10 my-6">
                 <div className=" w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">
                     {productData.Images.slice(0, 3).map(product => (
@@ -87,7 +87,7 @@ function SingleProduct() {
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">
                         Similar Products
                     </h2>
-                    <div className=" grid grid-flow-row md:grid-cols-3 my-6 p-2  gap-6 ">
+                    <div className=" grid grid-flow-row md:grid-cols-3 my-6 gap-6 ">
                         {filtered.map(product => (
                             <Link key={product.id} to={`/Product/${product.id}`}>
                                 <article  className="border border-black rounded flex flex-col justify-end">

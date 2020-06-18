@@ -14,7 +14,7 @@ function Products(props) {
 
     if (loading) return (
         <section className="my-16 container m-auto">
-            <div className=" pt-4 flex justify-between m-auto items-center mb-8 md:w-full">
+            <div className="p-3 flex justify-between m-auto items-center mb-8 md:w-full">
                 <div className="">Home/Shop</div>
                 <button className="px-6 py-2 bg-gray md:hidden" onClick={() => setShowFilter(true)}> <FontAwesomeIcon icon={faFilter}/> Filter</button>
             </div>
@@ -58,7 +58,7 @@ function Products(props) {
 
     return (
         <section className="my-16 container m-auto">
-            <div className=" pt-4 flex justify-between m-auto items-center mb-8 md:w-full">
+            <div className=" p-3 flex justify-between m-auto items-center mb-8 md:w-full">
                 <div className="">Home/Shop</div>
                 <button className="px-6 py-2 bg-gray md:hidden" onClick={() => setShowFilter(true)}> <FontAwesomeIcon icon={faFilter}/> Filter</button>
             </div>

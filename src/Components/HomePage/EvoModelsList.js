@@ -31,7 +31,7 @@ return (
        
     </div>
 
-    <ol className="p-3 pr-6 flex flex-no-wrap overflow-x-auto flex-col md:items-center" >
+    <ol className="p-3 flex flex-no-wrap overflow-x-auto flex-col md:items-center" >
         {data.evoheatModels.map(models => (
             
             <li style={backgroundCircle}  key={models.id} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-8 " key={models.id}>
@@ -41,8 +41,8 @@ return (
                 <div className="w-full flex flex-col items-center md:items-start md:w-1/2">
                     <h3 className="font-bold text-center w-4/5 md:text-left md:text-xl">{models.FullName}</h3>
                     <p className="hidden md:block md:my-4">{models.Description}</p>
-                    <Link to={`/products/${models.Name}`} className="w-3/5 flex justify-center md:w-1/3">
-                        <button className="bg-blue hover:bg-blue-700 text-white text-sm py-2  mt-4 rounded-full flex justify-around items-center w-1/2 md:w-full">View Product <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                    <Link to={`/products/${models.Name}`} className="w-full flex justify-center md:w-1/3">
+                        <button className="bg-blue px-2 hover:bg-blue-700 text-white text-sm py-2 mt-4 rounded-full flex justify-around items-center w-48 "> View Product <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                     </Link>
                 </div>
             </li>
