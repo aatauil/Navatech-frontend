@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.381c94e6.chunk.css",
+    "main.js": "/static/js/main.e9aabbd7.chunk.js",
+    "main.js.map": "/static/js/main.e9aabbd7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc75219d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc75219d.js.map",
+    "static/js/2.c0d0d766.chunk.js": "/static/js/2.c0d0d766.chunk.js",
+    "static/js/2.c0d0d766.chunk.js.map": "/static/js/2.c0d0d766.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.83407b30ec9734b5639d0da2ce61ad98.js": "/precache-manifest.83407b30ec9734b5639d0da2ce61ad98.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.381c94e6.chunk.css.map": "/static/css/main.381c94e6.chunk.css.map",
+    "static/js/2.c0d0d766.chunk.js.LICENSE.txt": "/static/js/2.c0d0d766.chunk.js.LICENSE.txt",
+    "static/media/Aquatic-center.png": "/static/media/Aquatic-center.e79d7fb6.png",
+    "static/media/Force-Features.png": "/static/media/Force-Features.7d7770c6.png",
+    "static/media/Hotel&Resort.png": "/static/media/Hotel&Resort.b669a018.png",
+    "static/media/Residential.png": "/static/media/Residential.5b891b89.png",
+    "static/media/Villa.png": "/static/media/Villa.5518d5ce.png",
+    "static/media/gray-circle.svg": "/static/media/gray-circle.eefa1982.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc75219d.js",
+    "static/js/2.c0d0d766.chunk.js",
+    "static/css/main.381c94e6.chunk.css",
+    "static/js/main.e9aabbd7.chunk.js"
+  ]
+}
