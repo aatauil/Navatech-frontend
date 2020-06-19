@@ -17,16 +17,16 @@ function PoolEvalutation() {
                     <div className="grid grid-flow-row  grid-cols-1 xl:grid-cols-2 py-6">
                         <div className="mt-12">
                         <fieldset>
-                            <legend className="font-bold">What is your pool dimensions: (m³)</legend>
+                            <legend className="font-bold">What is your pool dimensions: (m)</legend>
                             <div className="my-4">
                                 <label htmlFor="dimension-length" className="hidden"></label>
-                                <input type="number" min="0" id="dimension-length" name="dimension-length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
-                                <FontAwesomeIcon icon={faTimes}/>
+                                <input type="number" min="0" id="dimension-length" name="dimension-length" className="ml-0 p-6  md:w-32 md:h-12 bg-gray mb-2 h-4 w-full" placeholder="Lentgh"></input>
+                                <FontAwesomeIcon icon={faTimes} className="hidden md:inline mx-2"/>
                                 <label htmlFor="dimension-width" className="hidden"></label>
-                                <input type="number" min="0" id="dimension-width" name="dimension-width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
-                                <FontAwesomeIcon icon={faTimes}/>
+                                <input type="number" min="0" id="dimension-width" name="dimension-width" className="ml-0 p-6  md:w-32 md:h-12  bg-gray mb-2  h-4 w-full" placeholder="Width"></input>
+                                <FontAwesomeIcon icon={faTimes} className="hidden md:inline mx-2"/>
                                 <label htmlFor="dimension-depth" className="hidden"></label>
-                                <input type="number" min="0" id="dimension-depth" name="dimension-depth"  className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Depth"></input>
+                                <input type="number" min="0" id="dimension-depth" name="dimension-depth"  className="ml-0 p-6  md:w-32 md:h-12  bg-gray mb-2  h-4 w-full" placeholder="Depth"></input>
                                 <div className="mt-6">                                
                                     <input type="checkbox" className="mx-4" id="no-overflow"></input>
                                     <label className="my-4" name="no-overflow" htmlFor="no-overflow">Free form pool</label>
@@ -38,7 +38,7 @@ function PoolEvalutation() {
                         <div className="mt-12">
                             <label className="font-bold" htmlFor="pool-area">What is your pool area:</label>
                             <div className="my-4">
-                                <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
+                                <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m</span>
                             </div> 
 
                         </div>
@@ -75,8 +75,10 @@ function PoolEvalutation() {
                                 <FontAwesomeIcon icon={faTimes}/>
                                 <label htmlFor="overflow-width" className="hidden"></label>
                                 <input type="number" min="0" id="overflow-width" name="width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
-                                <input type="checkbox" className="mx-4" id="no-overflow"></input>
-                                <label className="my-4" name="no-overflow" htmlFor="no-overflow">Not Applicable</label>
+                                <div>
+                                    <input type="checkbox" className="mt-6 mx-4" id="no-overflow"></input>
+                                    <label className="mt-6" name="no-overflow" htmlFor="no-overflow">Not Applicable</label>
+                                </div>
                             </div> 
                         </fieldset>
                         </div>
@@ -127,23 +129,35 @@ function PoolEvalutation() {
                         <div className="mt-12">
                             <label className="font-bold">What is water pump & filtration system operational timing:</label>
                             <div className="my-4">
-                                <input type="radio" className="mr-2" name="filtration" id="twelve" value="twelve"></input>
-                                <label className="mr-6" htmlFor="twelve">12 hours</label>
-                                <input type="radio" className="mr-2" name="filtration" id="twenty-four" value="twenty-four"></input>
-                                <label className="mr-6" htmlFor="twenty-four" >24 hours</label>
-                                <input type="radio" className="mr-2" name="filtration" id="seven-to-ten" value="seven-to-ten"></input>
-                                <label htmlFor="seven-to-ten" >7am-10pm</label>
+                                <div className="block md:inline">
+                                    <input type="radio" className="mr-2" name="filtration" id="twelve" value="twelve"></input>
+                                    <label className="mr-6 whitespace-no-wrap" htmlFor="twelve">12 hours</label>
+                                </div>
+                                <div className="block md:inline">
+                                    <input type="radio" className="mr-2" name="filtration" id="twenty-four" value="twenty-four"></input>
+                                    <label className="mr-6 whitespace-no-wrap" htmlFor="twenty-four" >24 hours</label>
+                                </div>
+                                <div className="block md:inline">
+                                    <input type="radio" className="mr-2" name="filtration" id="seven-to-ten" value="seven-to-ten"></input>
+                                    <label htmlFor="seven-to-ten whitespace-no-wrap" >7am-10pm</label>
+                                </div>
                             </div> 
                         </div>
                         <div className="mt-12">
                             <label className="font-bold">What is the wind effect:</label>
                             <div className="my-4">
-                                <input type="radio" className="mr-2" name="wind-effect" id="sheltered" value="sheltered"></input>
-                                <label className="mr-6" htmlFor="sheltered">Sheltered No Wind</label>
-                                <input type="radio" className="mr-2" name="wind-effect" id="suburban" value="suburban"></input>
-                                <label className="mr-6" htmlFor="suburban" >Normal Suburban</label>
-                                <input type="radio" className="mr-2" name="wind-effect" id="high-wind" value="high-wind"></input>
-                                <label htmlFor="high-wind" >High Wind</label>
+                                <div className="block md:inline">
+                                    <input type="radio" className="mr-2" name="wind-effect" id="sheltered" value="sheltered"></input>
+                                    <label className="mr-6" htmlFor="sheltered">Sheltered No Wind</label>
+                                </div>
+                                <div className="block md:inline">
+                                    <input type="radio" className="mr-2" name="wind-effect" id="suburban" value="suburban"></input>
+                                    <label className="mr-6" htmlFor="suburban" >Normal Suburban</label>
+                                </div>
+                                <div className="block md:inline">
+                                    <input type="radio" className="mr-2" name="wind-effect" id="high-wind" value="high-wind"></input>
+                                    <label htmlFor="high-wind" >High Wind</label>
+                                </div>
                             </div> 
                         </div>
                         <div className="mt-12">
