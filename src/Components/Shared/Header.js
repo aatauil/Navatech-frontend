@@ -12,7 +12,7 @@ function Header() {
 
     if (showMenu){
         mMenu = 
-        <div className="w-4/5 z-50 bg-white h-screen absolute right-0 top-0 ">
+        <div className="w-4/5 z-50 bg-white h-screen fixed right-0 top-0 ">
                 <ol className="flex flex-col mt-40 p-6">
                     <Link to="/">
                         <li className="py-8 border-t border-black border-b w-full text-center">Home</li>
@@ -33,7 +33,7 @@ function Header() {
         </div>
 
         mMask = 
-        <div className="absolute z-40 top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
+        <div  onClick={() => setShowMenu(!showMenu)} className="fixed z-40 top-0 left-0 w-screen h-screen bg-black bg-opacity-50">
 
         </div>
     }
