@@ -48,10 +48,10 @@ function Footer() {
                     <h2 className="font-bold text-2xl mb-3">Newsletter</h2>
                     <div className="list-none mb-10">
                     <p>Subscribe to our newsletter and receive product news and promotions</p>
-                    <div className="mt-4 flex ">
-                        <input className="w-full w-40 bg-white mr-4 text-base py-2 px-4" placeholder="E-mail" type="text" />
-                        <button className="inline-flex text-white bg-black py-2 px-6 ">Subscribe</button>
-                    </div>
+                    <form name="Newsletter" method="POST" data-netlify="true" className="mt-4 flex ">
+                        <input required className="w-full w-40 bg-white mr-4 text-base py-2 px-4" placeholder="E-mail" type="email" />
+                        <input type="submit" className="inline-flex text-white bg-black py-2 px-6 " value="Subscribe"></input>
+                    </form>
                     </div>
                 </div>
                 </div>
