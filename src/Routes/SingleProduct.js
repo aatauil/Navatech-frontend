@@ -24,7 +24,9 @@ function SingleProduct() {
     
     return (
         <section className="my-16 p-3 container m-auto">
-            <div>Products/product</div>
+            <div className="">
+                    <Link to="/">Home</Link> / <Link to="/products">Products</Link> / <span className="text-red">{productData.Name}</span> 
+            </div>
             <section className="grid grid-cols-1 md:p-0 md:grid-cols-2 gap-10 my-6">
                 <div className=" w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">

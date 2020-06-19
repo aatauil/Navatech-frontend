@@ -19,7 +19,7 @@ function Contact() {
                      <span className=" text-4xl text-center text-blue"><FontAwesomeIcon  icon={faMapMarkerAlt}/></span>
                     
                     <h2 className="h2-title text-blue">Availability</h2>
-                    <p className="text-center ">Monday - Friday: <br></br> 9.am - 5.30 pm</p>
+                    <p className="text-center ">Monday - Friday: <br></br> 9 am - 6 pm</p>
                 </div>
                 <form netlify className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16">
                     <div className="grid  grid-cols-1 md:grid-cols-2 col-gap-20 py-6">

@@ -4,6 +4,7 @@ import {faFilter} from "@fortawesome/free-solid-svg-icons"
 import FILTERITEMS_QUERY from "../Queries/FILTERITEMS_QUERY"
 import { useQuery } from "@apollo/react-hooks";
 import ProductsList from '../Components/ProductsPage/productsList';
+import { Link } from 'react-router-dom';
 
 function Products(props) {
     const [showFilter, setShowFilter] = useState(false)
@@ -15,7 +16,9 @@ function Products(props) {
     if (loading) return (
         <section className="my-16 container m-auto">
             <div className="p-3 flex justify-between m-auto items-center mb-8 md:w-full">
-                <div className="">Home/Shop</div>
+                <div className="">
+                    <Link>Home</Link> / <span className="text-red">Products</span> 
+                </div>
                 <button className="px-6 py-2 bg-gray md:hidden" onClick={() => setShowFilter(true)}> <FontAwesomeIcon icon={faFilter}/> Filter</button>
             </div>
             <section className="flex flex-col h-auto md:flex-row justify-between">
@@ -59,7 +62,9 @@ function Products(props) {
     return (
         <section className="my-16 container m-auto">
             <div className=" p-3 flex justify-between m-auto items-center mb-8 md:w-full">
-                <div className="">Home/Shop</div>
+                <div className="">
+                    <Link>Home</Link> / <span className="text-red">Products</span> 
+                </div>
                 <button className="px-6 py-2 bg-gray md:hidden" onClick={() => setShowFilter(true)}> <FontAwesomeIcon icon={faFilter}/> Filter</button>
             </div>
             <section className="flex flex-col h-auto md:flex-row justify-between">
