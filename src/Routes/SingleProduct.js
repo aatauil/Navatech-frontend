@@ -28,7 +28,7 @@ function SingleProduct() {
                     <Link to="/">Home</Link> / <Link to="/products">Products</Link> / <span className="text-red">{productData.Name}</span> 
             </div>
             <section className="grid grid-cols-1 md:p-0 md:grid-cols-2 gap-10 my-6">
-                <div className=" w-full flex ">
+                <div className="mb-8 mb-0 w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">
                     {productData.Images.slice(0, 3).map(product => (
                         <div className="w-16 h-16 flex items-center border border-black m-auto" key={product.id} onClick={() => setTopImage("https://navatech.herokuapp.com" + product.url)}>
@@ -42,11 +42,11 @@ function SingleProduct() {
                   
                 </div>
 
-                <div className=" w-full">
+                <div className="mb-8 w-full">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">
                         {productData.Name}
                     </h2>
-                    <div className=" h-64">
+                    <div className="h-auto md:h-64">
                         <p className="">{productData.Description}</p>
                         <button className="bg-blue hover:bg-blue-700 text-white text-sm py-2 w-2/5 mt-4 rounded-full flex justify-around items-center md:w-1/3">Enquire <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                     </div>
@@ -54,7 +54,7 @@ function SingleProduct() {
 
                 <div className=" w-full">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Best suited for</h2>
-                    <ul className=" md:h-64">
+                    <ul className=" h-auto md:h-64">
                     {productData.best_suited_fors.map(product => (
                         
                      <li key={product.id} className="font-bold py-2 pl-2 bg-gray my-2">{product.Type}</li>
@@ -66,7 +66,7 @@ function SingleProduct() {
                 <div className=" w-full">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Warranty</h2>
                     <ReactMarkdown
-                    className=" h-64"
+                    className="h-auto md:h-64"
                     source={productData.Warranty}
                     escapeHtml={false}
                     />
@@ -74,7 +74,7 @@ function SingleProduct() {
                 <div className="w-full">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Ship Freight</h2>
                     <ReactMarkdown
-                    className=" md:h-64"
+                    className="h-auto md:h-64"
                     source={productData.Freight}
                     escapeHtml={false}
                     />

@@ -17,7 +17,7 @@ function Products(props) {
         <section className="my-16 container m-auto">
             <div className="p-3 flex justify-between m-auto items-center mb-8 md:w-full">
                 <div className="">
-                    <Link>Home</Link> / <span className="text-red">Products</span> 
+                    <Link to="/">Home</Link> / <span className="text-red">Products</span> 
                 </div>
                 <button className="px-6 py-2 bg-gray md:hidden" onClick={() => setShowFilter(true)}> <FontAwesomeIcon icon={faFilter}/> Filter</button>
             </div>
