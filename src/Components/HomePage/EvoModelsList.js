@@ -24,8 +24,8 @@ var backgroundCircle = {
 
 return (
     <section className="mt-20 max-w-screen-xl mx-auto">
-    <div className="flex md:items-center md:justify-start">
-        <h2 className="h2-title text-left p-3">Featured Products</h2>
+    <div className="flex md:items-center justify-center md:justify-start">
+        <h2 className="h2-title text-center p-3">Featured Products</h2>
         <div className="h-1 bg-gray flex-grow hidden md:inline"></div>
         <Link to={'/products'}> <button className="p-3 hidden md:inline text-blue">See all</button> </Link>
        
