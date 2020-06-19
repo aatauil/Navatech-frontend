@@ -12,10 +12,10 @@ function Footer() {
                     <h2 className="font-bold text-2xl mb-3 ">Contact</h2>
                     <ol className="list-none mb-10">
                         <li className="pb-2">
-                            E: hello@navatech.sg
+                            hello@navatech.sg
                         </li>
                         <li>
-                          Mob:  +65 9336 8535
+                          +65 9336 8535
                         </li>
                     </ol>
                 </div>

@@ -7,7 +7,7 @@ import ProductsList from '../Components/ProductsPage/productsList';
 import { Link } from 'react-router-dom';
 
 function Products(props) {
-    const [showFilter, setShowFilter] = useState(true)
+    const [showFilter, setShowFilter] = useState(false)
     const childRef = useRef();
     const { loading, error, data} = useQuery(FILTERITEMS_QUERY);
 
@@ -37,7 +37,7 @@ function Products(props) {
                             </div>
                         </div>
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2 mt-6" htmlFor="grid-state">
-                            Use Case
+                            Suitable for
                         </label>
                         <div className="relative">
                             <select className="block cursor-not-allowed appearance-none w-full bg-gray border border-black py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-dark" id="grid-state">
@@ -83,7 +83,7 @@ function Products(props) {
                             </div>
                         </div>
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2 mt-6" htmlFor="grid-state">
-                            Use Case
+                            Suitable for
                         </label>
                         <div className="relative">
                             <select onChange={(e) => childRef.current.refetchSuited(e.target.value)} className="block cursor-pointer appearance-none w-full bg-gray-200 border border-black py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-dark" id="grid-state">
@@ -133,7 +133,7 @@ function Products(props) {
                             </div>
                         </div>
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2 mt-6" htmlFor="grid-state">
-                            Use Case
+                            Suitable for
                         </label>
                         <div className="relative">
                             <select onChange={(e) => childRef.current.refetchSuited(e.target.value)} className="block cursor-pointer appearance-none w-full bg-gray-200 border border-black py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-dark" id="grid-state">

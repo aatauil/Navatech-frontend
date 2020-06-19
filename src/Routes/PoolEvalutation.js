@@ -38,7 +38,7 @@ function PoolEvalutation() {
                         <div className="mt-12">
                             <label className="font-bold" htmlFor="pool-area">What is your pool area:</label>
                             <div className="my-4">
-                                <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m</span>
+                                <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
                             </div> 
 
                         </div>
@@ -68,7 +68,7 @@ function PoolEvalutation() {
                         </div>
                         <div className="mt-12">
                         <fieldset>
-                            <legend className="font-bold">What is your infinity edge or overflow or waterfall dimensions: (m³)</legend>
+                            <legend className="font-bold">What is your infinity edge or overflow or waterfall dimensions: (m)</legend>
                             <div className="my-4">
                                 <label htmlFor="overflow-length" className="hidden"></label>
                                 <input type="number" min="0" id="overflow-length" name="length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
