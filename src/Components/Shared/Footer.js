@@ -37,13 +37,10 @@ function Footer() {
                     <h2 className="font-bold text-2xl mb-3 ">General</h2>
                     <ol className="list-none mb-10">
                     <li className="pb-2">
-                        <a href="/" className="hover:text-gray-800">Terms & Services</a>
+                        <a href="https://www.privacypolicygenerator.info/live.php?token=0qmYpfh0AP6509IxyvxIU1YAoi64K2hu" className="hover:text-gray-800">Privacy Policy</a>
                     </li>
                     <li className="pb-2">
-                        <a href="/" className="hover:text-gray-800">Privacy Policy</a>
-                    </li>
-                    <li className="pb-2">
-                        <a href="/" className="hover:text-gray-800">Cookie Policy</a>
+                        <a href="https://www.cookiepolicygenerator.com/live.php?token=sGu3ylS76xXAgHh1cbky4TF7JhFwii9v" className="hover:text-gray-800">Cookie Policy</a>
                     </li>
                     </ol>
                 </div>
