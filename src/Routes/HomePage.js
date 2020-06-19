@@ -4,7 +4,7 @@ import grayCircle from '../Assets/VectorBased/gray-circle.svg';
 import EvoList from '../Components/HomePage/EvoModelsList';
 import Features from '../Components/HomePage/Features';
 import About from '../Components/HomePage/About';
-import Partners from '../Components/HomePage/Partners';
+import Brands from '../Components/HomePage/Brands';
 
 function HomePage() {
 
@@ -21,7 +21,7 @@ function HomePage() {
             <EvoList/>
             <Features/>
             <About/>
-            <Partners/>
+            <Brands/>
         </section>
     )
 }
