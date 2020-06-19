@@ -27,7 +27,7 @@ function SingleProduct() {
             <div className="">
                     <Link to="/">Home</Link> / <Link to="/products">Products</Link> / <span className="text-red">{productData.Name}</span> 
             </div>
-            <section className="grid grid-cols-1 md:p-0 md:grid-cols-2 gap-10 my-6">
+            <section className="grid grid-cols-1 md:p-0 md:grid-cols-2 gap-8 md:gap-10 my-6">
                 <div className="mb-8 mb-0 w-full flex ">
                 <div className="flex flex-col h-full justify-evenly">
                     {productData.Images.slice(0, 3).map(product => (
@@ -42,7 +42,7 @@ function SingleProduct() {
                   
                 </div>
 
-                <div className="mb-8 w-full">
+                <div className=" w-full shadow p-3 md:shadow-none">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">
                         {productData.Name}
                     </h2>
@@ -52,7 +52,7 @@ function SingleProduct() {
                     </div>
                 </div>
 
-                <div className=" w-full">
+                <div className=" w-full shadow p-3 md:shadow-none">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Best suited for</h2>
                     <ul className=" h-auto md:h-64">
                     {productData.best_suited_fors.map(product => (
@@ -63,7 +63,7 @@ function SingleProduct() {
                   
                 </div>
 
-                <div className=" w-full">
+                <div className=" w-full shadow p-3 md:shadow-none">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Warranty</h2>
                     <ReactMarkdown
                     className="h-auto md:h-64"
@@ -71,7 +71,7 @@ function SingleProduct() {
                     escapeHtml={false}
                     />
                 </div>
-                <div className="w-full">
+                <div className="w-full shadow p-3 md:shadow-none">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Ship Freight</h2>
                     <ReactMarkdown
                     className="h-auto md:h-64"
@@ -79,7 +79,7 @@ function SingleProduct() {
                     escapeHtml={false}
                     />
                 </div>
-                <div className=" w-full">
+                <div className=" w-full shadow p-3 md:shadow-none">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Buy in bulk</h2>
                     <ReactMarkdown
                     className=""
