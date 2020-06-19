@@ -79,7 +79,7 @@ function SingleProduct() {
                     escapeHtml={false}
                     />
                 </div>
-                <div className=" w-full shadow p-3 md:shadow-none">
+                <div className="mb-8 md:mb-0 w-full shadow p-3 md:shadow-none">
                     <h2 className="h3-title mb-4 text-left border-b-2 border-black">Buy in bulk</h2>
                     <ReactMarkdown
                     className=""
