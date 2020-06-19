@@ -8,8 +8,8 @@ function Brands() {
              <h2 className="text-center h2-title w-full md:w-1/4 whitespace-no-wrap">Brands</h2>
              <div className="hidden md:inline h-1 bg-gray w-1/3 inline"></div>
              </div>
-            <div className="w-full flex justify-center mt-6">
-                <img src="https://navatech.herokuapp.com/uploads/Evoheat-logo_7db68520cf.png" className="h-auto md:h- object-cover " alt="Evoheat logo"></img>
+            <div className="w-full mt-6">
+                <img src="https://navatech.herokuapp.com/uploads/Evoheat-logo_7db68520cf.png" className="m-auto h-24 md:h-32 object-cover " alt="Evoheat logo"></img>
             </div>
         </section>
     )
