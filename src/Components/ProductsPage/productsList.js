@@ -71,11 +71,6 @@ const ProductsList = React.forwardRef((props,ref) => {
             </div>
     );
     if (error) return `Error! ${error.message}`;
-    console.log(data)
-    // let pArray = data.ProductsList.Name
-
-    // let sorted = pArray.sort()
-    // console.log(sorted)
 
     return (
         <div className=" md:w-8/12 w-full">   

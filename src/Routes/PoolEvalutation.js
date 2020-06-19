@@ -9,7 +9,7 @@ function PoolEvalutation() {
     return (
         <section className="my-16 container m-auto">
             <h1 className="h1-title mb-6">POOL <span className="text-red">HEATING</span>  EVALUATION</h1>
-            <form netlify>
+            <form data-netlify="true">
                 <article className="p-12 border-2 border-dark">
                     <h2 className="h3-title text-left border-b-2 border-black">
                         Pool Information
