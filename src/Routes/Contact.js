@@ -4,7 +4,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 function Contact() {
     return (
-        <div className="my-6 container m-auto">
+        <div className="p-3 my-6 container m-auto">
              <h1 className="h1-title my-12">Contact</h1>
             <div className="grid gap-2 md:gap-6 grid-cols-none md:grid-cols-2 ">
                  <div className="border rounded  w-full border-black p-16 flex flex-col justify-center align-center">
