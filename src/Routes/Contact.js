@@ -21,7 +21,7 @@ function Contact() {
                     <h2 className="h2-title text-blue">Availability</h2>
                     <p className="text-center ">Monday - Friday: <br></br> 9 am - 6 pm</p>
                 </div>
-                <form name="contact" action="/thankyou" method="POST" data-netlify="true" netlify-honeypot="bot-field" className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16">
+                <form name="contact" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field" className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16">
                     <div className="grid  grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="first-name">First Name:</label>
@@ -32,7 +32,7 @@ function Contact() {
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="electricity">Last Name:</label>
                                 <div className="my-4">
-                                    <input type="number" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="text" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
@@ -50,7 +50,7 @@ function Contact() {
                      </div>
                      <div className="mt-6 flex flex-col">
                         <label className="font-bold">Message:</label>
-                        <textarea className="bg-gray  my-4 h-64"></textarea>
+                        <textarea className="p-3 bg-gray  my-4 h-64"></textarea>
                      </div>
                      <div className="flex justify-center items-center my-6">
                          <input type="checkbox" id="privacy" name="privacy" className="mr-4"></input>
