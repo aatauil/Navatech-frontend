@@ -23,7 +23,7 @@ const SINGLEPRODUCT_QUERY = gql`
                     }
                 }
             }
-            best_suited_fors{
+            best_suited_fors(sort:"Position:asc"){
                 id
                 Type
             }
