@@ -182,7 +182,7 @@ function PoolEvalutation() {
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="last-name">Last Name:</label>
                                 <div className="my-4">
-                                    <input type="number" min="0" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="text" min="0" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
