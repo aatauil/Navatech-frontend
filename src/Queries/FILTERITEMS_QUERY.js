@@ -7,7 +7,7 @@ query filterItems{
         Name
     
     }
-    bestSuitedFors{
+    bestSuitedFors(sort:"Position:asc"){
     id
     Type
   }
