@@ -22,6 +22,7 @@ function Contact() {
                     <p className="text-center ">Monday - Friday: <br></br> 9 am - 6 pm</p>
                 </div>
                 <form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16">
+                <input type='hidden' name='form-name' value='contact-form' />
                     <div className="grid  grid-cols-1 md:grid-cols-2 col-gap-20 py-6">
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="first-name">First Name:</label>
