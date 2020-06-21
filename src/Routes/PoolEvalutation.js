@@ -9,8 +9,8 @@ function PoolEvalutation() {
     return (
         <section className="p-3 my-16 container m-auto">
             <h1 className="h1-title mb-6">POOL <span className="text-red">HEATING</span>  EVALUATION</h1>
-            <form name="Pool-Evaluation-Form" method="POST" data-netlify="true">
-                <input type='hidden' name='form-name' value='Pool-Evaluation-Form' />
+            <form name="pool-evaluation" method="POST" data-netlify="true">
+                <input type='hidden' name='form-name' value='pool-evaluation' />
                 <article className="p-12 border-2 border-dark">
                     <h2 className="h3-title text-left border-b-2 border-black">
                         Pool Information
