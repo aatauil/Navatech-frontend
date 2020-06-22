@@ -1,5 +1,5 @@
 import React from 'react'
-import ForceImg from "../../Assets/PixelBased/Force-Features.png"
+import ForceImg from "../../Assets/PixelBased/Force-Features.webp"
 
 function Features() {
 
