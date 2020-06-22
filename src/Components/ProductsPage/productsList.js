@@ -67,9 +67,8 @@ const ProductsList = React.forwardRef((props,ref) => {
                                     <Skeleton width="100%" height="25px"/>
                                 </article>
                     </div>
-
             </div>
-    );
+        );
     if (error) return `Error! ${error.message}`;
 
     return (
