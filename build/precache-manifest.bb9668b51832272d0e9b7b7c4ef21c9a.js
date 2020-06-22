@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "458f512804f947f891baab118c73a305",
+    "revision": "913f1f7dfe968676a52bbe531e5881f2",
     "url": "/index.html"
   },
   {
-    "revision": "ccecb751d1ffdc182f8c",
+    "revision": "54140663b1d85ef3e46e",
     "url": "/static/css/main.381c94e6.chunk.css"
   },
   {
-    "revision": "401cb50666a4a35586ec",
-    "url": "/static/js/2.c0d0d766.chunk.js"
+    "revision": "b6c8705bce5cbf2a18b5",
+    "url": "/static/js/2.6e18986d.chunk.js"
   },
   {
     "revision": "977f76ca55aa854e22fbdfa4ae2c0753",
-    "url": "/static/js/2.c0d0d766.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.6e18986d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ccecb751d1ffdc182f8c",
-    "url": "/static/js/main.e9aabbd7.chunk.js"
+    "revision": "54140663b1d85ef3e46e",
+    "url": "/static/js/main.ee6799be.chunk.js"
   },
   {
     "revision": "68a9665f6992de0c4239",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5518d5ceb6231066c6b7f2ac191c0736",
     "url": "/static/media/Villa.5518d5ce.png"
+  },
+  {
+    "revision": "551b2ca067122c91294b7112c021b529",
+    "url": "/static/media/evoheat.551b2ca0.png"
   },
   {
     "revision": "eefa198244e261d78a6e6296664865b7",
