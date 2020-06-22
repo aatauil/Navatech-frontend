@@ -10,6 +10,7 @@ import Products from './Routes/Products';
 import SingleProduct from './Routes/SingleProduct'
 import Contact from './Routes/Contact';
 import TopBar from './Components/Shared/TopBar'
+import Thankyou from './Routes/Thankyou'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/Products" component={Products}/>
             <Route path="/Contact" component={Contact}/>
             <Route path="/Product/:id" component={SingleProduct}/>
+            <Route path="/Thankyou/" component={Thankyou}/>
           </Switch>
         <Footer />
       </div>

@@ -35,7 +35,7 @@
 
     <!-- CONTACT FORM -->
 
-    <form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16"> 
+    <form name="contact-form" method="POST" action="/Thankyou" data-netlify="true" netlify-honeypot="bot-field" hidden className=" border w-full p-12 border-black row-span-2 col-span-1 md:col-span-2 m-auto mb-16"> 
       <input type="text" name="first-name" id="first-name" className="p-6 mr-2 w-full h-12 bg-gray" >
       <input type="text" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" >
       <input type="tel" name="phone-number:" id="phone-number:" className="p-6 mr-2 w-full h-12 bg-gray" >
@@ -47,7 +47,7 @@
 
   <!-- POOL EVALUATION -->
 
-  <form name="pool-evaluation" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <form name="pool-evaluation" method="POST" action="/Thankyou" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <fieldset>
           <legend className="font-bold">What is your pool dimensions: (m)</legend>
               <input type="number" min="0" id="dimension-length" name="dimension-length" className="ml-0 p-6  md:w-32 md:h-12 bg-gray mb-2 h-4 w-full" placeholder="Lentgh"></input>
@@ -99,7 +99,7 @@
 
     <!-- NEWSLETTER -->
 
-    <form name="newsletter" method="POST" data-netlify="true" className="mt-4 flex " hidden>
+    <form name="newsletter" method="POST" action="/Thankyou" data-netlify="true" className="mt-4 flex " hidden>
       <input required className="w-full w-40 bg-white mr-4 text-base py-2 px-4" placeholder="E-mail" type="email" />
       <input type="submit" className="inline-flex text-white bg-black py-2 px-6 " value="Subscribe"></input>
   </form>
