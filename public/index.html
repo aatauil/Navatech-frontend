@@ -45,55 +45,65 @@
       <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold">
   </form>
 
+  <!-- POOL EVALUATION -->
+
   <form name="pool-evaluation" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-            <fieldset>
-                <legend className="font-bold">What is your pool dimensions: (m)</legend>
-                    <input type="number" min="0" id="dimension-length" name="dimension-length" className="ml-0 p-6  md:w-32 md:h-12 bg-gray mb-2 h-4 w-full" placeholder="Lentgh"></input>
-                    <input type="number" min="0" id="dimension-width" name="dimension-width" className="ml-0 p-6  md:w-32 md:h-12  bg-gray mb-2  h-4 w-full" placeholder="Width"></input>
-                    <input type="number" min="0" id="dimension-depth" name="dimension-depth"  className="ml-0 p-6  md:w-32 md:h-12  bg-gray mb-2  h-4 w-full" placeholder="Depth"></input>     
-                    <input type="checkbox" className="mx-4" id="no-overflow"></input>
-            </fieldset>
-                    <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
-                    <input type="number" min="0" name="volume" id="volume" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m³</span>
-                    <input type="radio" className="mr-2" name="in-outdoor" id="indoor" value="indoor"></input>
-                    <input type="radio" className="mr-2" name="in-outdoor" id="outdoor" value="outdoor"></input>
-                    <input type="number" min="0" max="100"  name="shade" id="shade" className="p-6 mr-2 w-32 h-12 bg-gray"></input><span className="text-xl">%</span>
-            <fieldset>
-                <legend className="font-bold">What is your infinity edge or overflow or waterfall dimensions: (m)</legend>
-                    <input type="number" min="0" id="overflow-length" name="length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
-                    <input type="number" min="0" id="overflow-width" name="width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
-                    <input type="checkbox" className="mt-6 mx-4" id="no-overflow"></input>
-            </fieldset>
-                    <input type="radio" className="mr-2" name="pool-cover" id="cover-yes" value="cover-yes"></input>
-                    <input type="radio" className="mr-2" name="pool-cover" id="cover-no" value="cover-no"></input>
-                    <input type="number" min="0" name="pool-users" id="pool-users" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className=""> Users</span>
-                    <input type="radio" className="mr-2" name="pool-color" id="color-light" value="color-light"></input>
-                    <input type="radio" className="mr-2" name="pool-color" id="color-dark" value="color-dark"></input>
-                    <input type="number" min="0" name="temperature" id="temperature" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">Degrees Celsius</span>
-            <fieldset>
-                <legend className="font-bold">What are your pool operating hours:</legend>
-                    <input type="number" min="0" max="12" id="am" name="am" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="am"></input>
-                    <input type="number" min="0" max="12" id="pm" name="pm" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="pm"></input>
-            </fieldset>
-                    <input type="radio" className="mr-2" name="filtration" id="twelve" value="twelve"></input>
-                    <input type="radio" className="mr-2" name="filtration" id="twenty-four" value="twenty-four"></input>
-                    <input type="radio" className="mr-2" name="filtration" id="seven-to-ten" value="seven-to-ten"></input>
-                    <input type="radio" className="mr-2" name="wind-effect" id="sheltered" value="sheltered"></input>
-                    <input type="radio" className="mr-2" name="wind-effect" id="suburban" value="suburban"></input>
-                    <input type="radio" className="mr-2" name="wind-effect" id="high-wind" value="high-wind"></input>
-                    <input type="number" min="0" name="electricity" id="electricity" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">cents USD per kWh</span>
-                    <input type="text" name="first-name" id="first-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
-                    <input type="text" min="0" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
-                    <input type="tel" name="phone-number:" id="phone-number:" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
-                    <input type="e-mail" name="email" id="email" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
-                    <input type="text" name="location" id="location" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
-                    <select className="my-4 block cursor-pointer appearance-none w-full bg-gray-200 border border-black py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-dark" id="grid-state">
-                        <option>Select your country</option>
-                    </select>
-            <textarea className="bg-gray  my-4 h-64"></textarea>
-            <input type="checkbox" id="privacy" name="privacy" className="mr-4"></input>
-            <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>
-</form>
+      <fieldset>
+          <legend className="font-bold">What is your pool dimensions: (m)</legend>
+              <input type="number" min="0" id="dimension-length" name="dimension-length" className="ml-0 p-6  md:w-32 md:h-12 bg-gray mb-2 h-4 w-full" placeholder="Lentgh"></input>
+              <input type="number" min="0" id="dimension-width" name="dimension-width" className="ml-0 p-6  md:w-32 md:h-12  bg-gray mb-2  h-4 w-full" placeholder="Width"></input>
+              <input type="number" min="0" id="dimension-depth" name="dimension-depth"  className="ml-0 p-6  md:w-32 md:h-12  bg-gray mb-2  h-4 w-full" placeholder="Depth"></input>     
+              <input type="checkbox" className="mx-4" id="no-overflow"></input>
+      </fieldset>
+              <input type="number" min="0" name="pool-area" id="pool-area" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m²</span>
+              <input type="number" min="0" name="volume" id="volume" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="text-xl"> m³</span>
+              <input type="radio" className="mr-2" name="in-outdoor" id="indoor" value="indoor"></input>
+              <input type="radio" className="mr-2" name="in-outdoor" id="outdoor" value="outdoor"></input>
+              <input type="number" min="0" max="100"  name="shade" id="shade" className="p-6 mr-2 w-32 h-12 bg-gray"></input><span className="text-xl">%</span>
+      <fieldset>
+          <legend className="font-bold">What is your infinity edge or overflow or waterfall dimensions: (m)</legend>
+              <input type="number" min="0" id="overflow-length" name="length" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="Lentgh"></input>
+              <input type="number" min="0" id="overflow-width" name="width" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="Width"></input>
+              <input type="checkbox" className="mt-6 mx-4" id="no-overflow"></input>
+      </fieldset>
+              <input type="radio" className="mr-2" name="pool-cover" id="cover-yes" value="cover-yes"></input>
+              <input type="radio" className="mr-2" name="pool-cover" id="cover-no" value="cover-no"></input>
+              <input type="number" min="0" name="pool-users" id="pool-users" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className=""> Users</span>
+              <input type="radio" className="mr-2" name="pool-color" id="color-light" value="color-light"></input>
+              <input type="radio" className="mr-2" name="pool-color" id="color-dark" value="color-dark"></input>
+              <input type="number" min="0" name="temperature" id="temperature" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">Degrees Celsius</span>
+      <fieldset>
+          <legend className="font-bold">What are your pool operating hours:</legend>
+              <input type="number" min="0" max="12" id="am" name="am" className="p-6 mx-2 w-32 h-12 bg-gray" placeholder="am"></input>
+              <input type="number" min="0" max="12" id="pm" name="pm" className="p-6 mx-2 w-32 h-12  bg-gray" placeholder="pm"></input>
+      </fieldset>
+              <input type="radio" className="mr-2" name="filtration" id="twelve" value="twelve"></input>
+              <input type="radio" className="mr-2" name="filtration" id="twenty-four" value="twenty-four"></input>
+              <input type="radio" className="mr-2" name="filtration" id="seven-to-ten" value="seven-to-ten"></input>
+              <input type="radio" className="mr-2" name="wind-effect" id="sheltered" value="sheltered"></input>
+              <input type="radio" className="mr-2" name="wind-effect" id="suburban" value="suburban"></input>
+              <input type="radio" className="mr-2" name="wind-effect" id="high-wind" value="high-wind"></input>
+              <input type="number" min="0" name="electricity" id="electricity" className="p-6 mr-2 w-32 h-12 bg-gray" ></input><span className="">cents USD per kWh</span>
+              <input type="text" name="first-name" id="first-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+              <input type="text" min="0" name="last-name" id="last-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+              <input type="tel" name="phone-number:" id="phone-number:" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+              <input type="e-mail" name="email" id="email" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+              <input type="text" name="location" id="location" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+              <select className="my-4 block cursor-pointer appearance-none w-full bg-gray-200 border border-black py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-dark" id="grid-state">
+                  <option>Select your country</option>
+              </select>
+      <textarea className="bg-gray  my-4 h-64"></textarea>
+      <input type="checkbox" id="privacy" name="privacy" className="mr-4"></input>
+      <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>
+    </form>
+
+    <!-- NEWSLETTER -->
+
+    <form name="newsletter" method="POST" data-netlify="true" className="mt-4 flex ">
+      <input required className="w-full w-40 bg-white mr-4 text-base py-2 px-4" placeholder="E-mail" type="email" />
+      <input type="submit" className="inline-flex text-white bg-black py-2 px-6 " value="Subscribe"></input>
+  </form>
+
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NST99DQ"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <noscript>You need to enable JavaScript to run this app.</noscript>

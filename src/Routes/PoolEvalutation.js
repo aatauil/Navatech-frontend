@@ -4,8 +4,6 @@ import { faTimes , faArrowsAltH} from "@fortawesome/free-solid-svg-icons"
 import countries from '../Assets/JSON/countries';
 
 function PoolEvalutation() {
-
-
     return (
         <section className="p-3 my-16 container m-auto">
             <h1 className="h1-title mb-6">POOL <span className="text-red">HEATING</span>  EVALUATION</h1>
@@ -58,9 +56,7 @@ function PoolEvalutation() {
                                 <input type="radio" className="mr-2" name="in-outdoor" id="outdoor" required="true" value="outdoor"></input>
                                 <label htmlFor="outdoor">Outdoor</label>
                             </div> 
-
                         </div>
-                       
                         <div className="mt-12">
                             <label className="font-bold" htmlFor="shade">Percentage shade over the pool:</label>
                             <div className="my-4">
