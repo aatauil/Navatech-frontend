@@ -51,7 +51,7 @@ function Contact() {
                      </div>
                      <div className="mt-6 flex flex-col">
                         <label className="font-bold">Message:</label>
-                        <textarea required="true" className="p-3 bg-gray  my-4 h-64"></textarea>
+                        <textarea required="true" name="message" className="p-3 bg-gray  my-4 h-64"></textarea>
                      </div>
                      <div className="flex justify-center items-center my-6">
                          <input type="checkbox" id="privacy" name="privacy" required="true" className="mr-4"></input>
