@@ -14,16 +14,16 @@ function Header() {
         mMenu = 
         <div className="w-4/5 z-50 bg-white h-screen fixed right-0 top-0 ">
                 <ol className="flex flex-col mt-40 p-6">
-                    <Link to="/">
+                    <Link to="/" onClick={() => setShowMenu(!showMenu)}>
                         <li className="py-8 border-t border-black border-b w-full text-center">Home</li>
                     </Link>
-                    <Link to="/products">
+                    <Link to="/products" onClick={() => setShowMenu(!showMenu)}>
                     <li className="py-8 border-b border-black w-full text-center">Products</li>
                     </Link>
-                    <Link to="/Evaluation">
+                    <Link to="/Evaluation" onClick={() => setShowMenu(!showMenu)}>
                     <li className="py-8 border-b border-black w-full text-center">Evaluation</li>
                     </Link>
-                    <Link to="/Contact">
+                    <Link to="/Contact" onClick={() => setShowMenu(!showMenu)}>
                     <li className="py-8 border-b border-black w-full text-center">Contact</li>
                     </Link>
                 </ol>
