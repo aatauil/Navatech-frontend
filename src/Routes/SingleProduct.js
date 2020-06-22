@@ -5,6 +5,7 @@ import SINGLEPRODUCT_QUERY from "../Queries/SINGLEPRODUCT_QUERY"
 import { useQuery } from "@apollo/react-hooks";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faArrowAltCircleRight} from "@fortawesome/free-solid-svg-icons"
+import Skeleton from '@yisheng90/react-loading';
 const ReactMarkdown = require('react-markdown/with-html')
 
 function SingleProduct() {
@@ -14,7 +15,76 @@ function SingleProduct() {
         
     let productId = useParams()
     const { loading, error, data } = useQuery( SINGLEPRODUCT_QUERY, { variables: { singleProductId: productId.id} });
-    if (loading) return 'Loading...';
+    if (loading) return (
+        <section className="my-16 p-3 container m-auto">
+            <div className="">
+                    <Link to="/">Home</Link> / <Link to="/products">Products</Link> / <span className="text-red">loading...</span> 
+            </div>
+            <section className="grid grid-cols-1 md:p-0 md:grid-cols-2 gap-8 md:gap-10 my-6">
+                <div className="mb-8 mb-0 w-full flex ">
+                <div className="flex flex-col h-full justify-evenly">
+
+                        <div className="w-16 h-16 flex items-center border border-black m-auto">
+                        <Skeleton  circle />
+                        </div>
+                        <div className="w-16 h-16 flex items-center border border-black m-auto">
+                        <Skeleton circle />
+                        </div>
+                        <div className="w-16 h-16 flex items-center border border-black m-auto" >
+                        <Skeleton  circle />
+                        </div>
+                    </div>
+                    <div className="m-auto">
+                     <Skeleton height="10rem" circle />
+                    </div>
+                  
+                </div>
+
+                <div className=" w-full shadow p-3 md:shadow-none">
+                    <h2 className="h3-title mb-4 text-left border-b-2 border-black">
+                        Loading...
+                    </h2>
+                    <div className="h-auto md:h-64">
+                        <Skeleton width="100%" height="25px"/>
+                        <Skeleton width="100%" height="25px"/>  
+                        <Skeleton width="100%" height="25px"/>
+                    </div>
+                </div>
+
+                <div className=" w-full shadow p-3 md:shadow-none">
+                    <h2 className="h3-title mb-4 text-left border-b-2 border-black">Best suited for</h2>
+                    <ul className=" h-auto md:h-64">
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                    </ul>
+                  
+                </div>
+
+                <div className=" w-full shadow p-3 md:shadow-none">
+                    <h2 className="h3-title mb-4 text-left border-b-2 border-black">Warranty</h2>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                </div>
+                <div className="w-full shadow p-3 md:shadow-none">
+                    <h2 className="h3-title mb-4 text-left border-b-2 border-black">Ship Freight</h2>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                </div>
+                <div className="mb-8 md:mb-0 w-full shadow p-3 md:shadow-none">
+                    <h2 className="h3-title mb-4 text-left border-b-2 border-black">Buy in bulk</h2>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                    <Skeleton width="100%" height="25px"/>
+                </div>
+            </section>
+
+        </section>
+
+    );
+    
     if (error) return `Error! ${error.message}`;
     let productData = data.allProduct;
     let currentID = productData.id
