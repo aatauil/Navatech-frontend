@@ -22,7 +22,7 @@ if (loading) return (
 
     <ol className="p-3 flex flex-no-wrap overflow-x-auto flex-col md:items-center" >
        
-            <li style={backgroundCircle} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 p-12  flex-none md:shadow-none  md:flex-row md:my-8 " >
+            <li  className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 p-12  flex-none md:shadow-none  md:flex-row md:my-8 " >
                 <div className="md:w-1/2 h-auto">
                 <Skeleton height="10rem" circle />
                 </div>
@@ -34,7 +34,7 @@ if (loading) return (
                     </div>
                 </div>
             </li>
-            <li style={backgroundCircle} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 p-12  flex-none md:shadow-none  md:flex-row md:my-8 " >
+            <li className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 p-12  flex-none md:shadow-none  md:flex-row md:my-8 " >
                 <div className="md:w-1/2 h-auto">
                 <Skeleton height="10rem" circle />
                 </div>
@@ -46,7 +46,7 @@ if (loading) return (
                     </div>
                 </div>
             </li>
-            <li style={backgroundCircle} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 p-12  flex-none md:shadow-none  md:flex-row md:my-8 " >
+            <li  className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 p-12  flex-none md:shadow-none  md:flex-row md:my-8 " >
                 <div className="md:w-1/2 h-auto">
                 <Skeleton height="10rem" circle />
                 </div>
