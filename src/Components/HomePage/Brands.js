@@ -1,5 +1,5 @@
 import React from 'react'
-import evoheat from '../../Assets/PixelBased/evoheat.webp'
+import evoheat from '../../Assets/PixelBased/evoheat.png'
 
 function Brands() {
     return (

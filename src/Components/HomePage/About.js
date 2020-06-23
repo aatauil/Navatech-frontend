@@ -1,8 +1,8 @@
 import React from 'react'
-import Villa from '../../Assets/PixelBased/Villa.webp'
-import Residential from '../../Assets/PixelBased/Residential.webp'
-import Hotel from '../../Assets/PixelBased/Hotel&Resort.webp'
-import Aquatic from '../../Assets/PixelBased/Aquatic-center.webp'
+import Villa from '../../Assets/PixelBased/Villa.png'
+import Residential from '../../Assets/PixelBased/Residential.png'
+import Hotel from '../../Assets/PixelBased/Hotel&Resort.png'
+import Aquatic from '../../Assets/PixelBased/Aquatic-center.png'
 
 function About() {
     return (
