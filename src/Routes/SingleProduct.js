@@ -25,7 +25,7 @@ function SingleProduct() {
                 <div className="flex flex-col h-full justify-evenly">
 
                         <div className="w-16 h-16 flex items-center border border-black m-auto">
-                        <Skeleton  circle />
+                        <Skeleton circle />
                         </div>
                         <div className="w-16 h-16 flex items-center border border-black m-auto">
                         <Skeleton circle />
@@ -90,6 +90,7 @@ function SingleProduct() {
     let currentID = productData.id
     const similar = productData.model.Products
     const filtered = similar.filter(product => product.id !== currentID)
+    let contactRoute = `/Contact/${productData.Name}`
 
     
     return (
@@ -118,7 +119,9 @@ function SingleProduct() {
                     </h2>
                     <div className="h-auto md:h-64">
                         <p className="">{productData.Description}</p>
-                        <button className="bg-blue hover:bg-blue-700 text-white text-sm py-2 w-2/5 mt-4 rounded-full flex justify-around items-center md:w-1/3">Enquire <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                        <Link to={contactRoute}>
+                            <button className="bg-blue hover:bg-blue-700 text-white text-sm py-2 w-2/5 mt-4 rounded-full flex justify-around items-center md:w-1/3">Enquire <FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                        </Link>
                     </div>
                 </div>
 

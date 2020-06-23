@@ -23,7 +23,8 @@ function App() {
             <Route path="/" exact component={HomePage}/>
             <Route path="/Evaluation" component={Evaluation}/>
             <Route path="/Products" component={Products}/>
-            <Route path="/Contact" component={Contact}/>
+            <Route path="/Contact/:model" component={Contact}/>
+            <Route path="/Contact/" component={Contact}/>
             <Route path="/Product/:id" component={SingleProduct}/>
             <Route path="/Thankyou/" component={Thankyou}/>
           </Switch>

@@ -1,8 +1,19 @@
 import React from 'react'
+import {useParams} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 function Contact() {
+
+    let {model}  = useParams();
+    console.log(model)
+
+    let preMessage;
+
+    if (model){
+        preMessage = `Dear Navatech, I would like to contact you concerning ${model} can you contact me as soon as possible? Thank you`
+    }
+
     return (
         <div className="p-3 my-6 container m-auto">
              <h1 className="h1-title my-12">Contact</h1>
@@ -27,13 +38,13 @@ function Contact() {
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="first-name">First Name:</label>
                                 <div className="my-4">
-                                    <input type="text" name="first-name" required="true" id="first-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="text" name="first-name" required={true} id="first-name" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="electricity">Last Name:</label>
                                 <div className="my-4">
-                                    <input type="text" name="last-name" id="last-name" required="true" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="text" name="last-name" id="last-name" required={true} className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                         <div className="mt-6">
@@ -45,16 +56,16 @@ function Contact() {
                         <div className="mt-6">
                                 <label className="font-bold" htmlFor="email">E-mail:</label>
                                 <div className="my-4">
-                                    <input type="e-mail" name="email" id="email" required="true" className="p-6 mr-2 w-full h-12 bg-gray" ></input>
+                                    <input type="e-mail" name="email" id="email" required={true} className="p-6 mr-2 w-full h-12 bg-gray" ></input>
                                 </div> 
                         </div>
                      </div>
                      <div className="mt-6 flex flex-col">
                         <label className="font-bold">Message:</label>
-                        <textarea required="true" name="message" className="p-3 bg-gray  my-4 h-64"></textarea>
+                        <textarea required={true} name="message" value={preMessage} className="p-3 bg-gray  my-4 h-64"></textarea>
                      </div>
                      <div className="flex justify-center items-center my-6">
-                         <input type="checkbox" id="privacy" name="privacy" required="true" className="mr-4"></input>
+                         <input type="checkbox" id="privacy" name="privacy" required={true} className="mr-4"></input>
                          <label htmlFor="privacy" className="font-bold">I have read and agreed to the privacy policy of NAVATECH.</label>
                      </div>
                      <div className="w-full flex justify-center mt-12">
