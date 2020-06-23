@@ -11,7 +11,7 @@ function Contact() {
     let preMessage;
 
     if (model){
-        preMessage = `Dear Navatech, I would like to contact you concerning ${model} can you contact me as soon as possible? Thank you`
+        preMessage = `Dear NavaTech, I would like to enquire on your ${model} model.\nKindly contact me as soon as possible. \n\nThank you`
     }
 
     return (
