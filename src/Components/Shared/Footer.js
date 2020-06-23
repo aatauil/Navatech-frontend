@@ -80,6 +80,7 @@ function Footer() {
         <div className="">
             <div className=" bg-white py-4 px-5 flex flex-wrap flex-col sm:flex-row ">
             <p className=" text-sm text-center sm:text-left max-w-screen-xl mx-auto">©2020 NAVA TECH.</p>
+            <p className=" text-sm text-center sm:text-left max-w-screen-xl mx-auto">Developed by <a className="font-bold text-purple" href="https://hatina.be">Hatina</a> </p>
             </div>
         </div>
     </footer>
