@@ -66,7 +66,7 @@ function Contact() {
                      </div>
                      <div className="flex justify-center items-center my-6">
                          <input type="checkbox" id="privacy" name="privacy" required={true} className="mr-4"></input>
-                         <label htmlFor="privacy" className="font-bold">I have read and agreed to the privacy policy of NAVATECH.</label>
+                         <label htmlFor="privacy" className="">I have read and agreed to the <a href="https://www.privacypolicygenerator.info/live.php?token=0qmYpfh0AP6509IxyvxIU1YAoi64K2hu" className="text-blue font-bold">privacy policy</a>  of NAVATECH.</label>
                      </div>
                      <div className="w-full flex justify-center mt-12">
                      <input type="submit" className=" px-24 py-4 bg-blue text-white font-bold"></input>
