@@ -71,6 +71,7 @@ var backgroundCircle = {
     backgroundSize: "30vh"
 }
 
+const filtered = data.evoheatModels.filter(product => product.Name !== "DHP-R")
 
 
 return (
@@ -83,7 +84,7 @@ return (
     </div>
 
     <ol className="p-3 flex flex-no-wrap overflow-x-auto flex-col md:items-center" >
-        {data.evoheatModels.map(models => (
+        {filtered.map(models => (
             
             <li style={backgroundCircle} className="bg-white shadow mb-3 mr-4 h-auto flex justify-end flex-col items-center w-full lg:w-4/5 pb-6 px-2 flex-none md:shadow-none  md:flex-row md:my-8 " key={models.id}>
                 <div className="md:w-1/2 h-auto">

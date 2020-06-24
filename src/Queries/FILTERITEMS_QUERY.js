@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const FILTERITEMS_QUERY = gql`
 query filterItems{
-    evoheatModels{
+    evoheatModels(sort:"Position:asc"){
 		id
         Name
     
