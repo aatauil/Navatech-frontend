@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.381c94e6.chunk.css",
-    "main.js": "/static/js/main.ddcdff8d.chunk.js",
-    "main.js.map": "/static/js/main.ddcdff8d.chunk.js.map",
+    "main.css": "/static/css/main.1dc30dda.chunk.css",
+    "main.js": "/static/js/main.c0e93533.chunk.js",
+    "main.js.map": "/static/js/main.c0e93533.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc75219d.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc75219d.js.map",
     "static/js/2.2c8f66aa.chunk.js": "/static/js/2.2c8f66aa.chunk.js",
     "static/js/2.2c8f66aa.chunk.js.map": "/static/js/2.2c8f66aa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.afd624eb141cac1f421cf628ccd64a9c.js": "/precache-manifest.afd624eb141cac1f421cf628ccd64a9c.js",
+    "precache-manifest.2862b90887384b9427b9a02ac033f840.js": "/precache-manifest.2862b90887384b9427b9a02ac033f840.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.381c94e6.chunk.css.map": "/static/css/main.381c94e6.chunk.css.map",
+    "static/css/main.1dc30dda.chunk.css.map": "/static/css/main.1dc30dda.chunk.css.map",
     "static/js/2.2c8f66aa.chunk.js.LICENSE.txt": "/static/js/2.2c8f66aa.chunk.js.LICENSE.txt",
     "static/media/Aquatic-center.png": "/static/media/Aquatic-center.68535fbe.png",
-    "static/media/Force-Features.png": "/static/media/Force-Features.4c3da66a.png",
+    "static/media/Force-Features.png": "/static/media/Force-Features.ce36f06c.png",
     "static/media/Hotel&Resort.png": "/static/media/Hotel&Resort.f9b33c71.png",
     "static/media/Residential.png": "/static/media/Residential.0744b0a0.png",
     "static/media/Villa.png": "/static/media/Villa.fa156d24.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.fc75219d.js",
     "static/js/2.2c8f66aa.chunk.js",
-    "static/css/main.381c94e6.chunk.css",
-    "static/js/main.ddcdff8d.chunk.js"
+    "static/css/main.1dc30dda.chunk.css",
+    "static/js/main.c0e93533.chunk.js"
   ]
 }
