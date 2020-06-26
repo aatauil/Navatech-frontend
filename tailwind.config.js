@@ -1,10 +1,5 @@
 module.exports = {
-  purge: [
-    "./src/*.js",
-    "./src/**/*.js",
-    "./src/**/**/*.js",
-    
-  ],
+  purge: [],
   theme: {
     extend: {
       height: {
