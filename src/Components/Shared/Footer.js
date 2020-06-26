@@ -74,7 +74,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
                 </div>
-                <a href="/" className="hidden md:block text-gold md:text-lg font-bold bg-white px-4 py-2" >NAVATECH</a>
+                <a href="/" className="hidden md:block text-gold md:text-lg font-bold bg-white px-4 py-2 shadow" >NAVATECH</a>
                 </div>
             </div>
         <div className="">
